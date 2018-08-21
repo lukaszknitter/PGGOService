@@ -22,29 +22,29 @@ public class FacultyController {
     }
 
     @GetMapping("/{id}")
-    public FacultyDto getDetail(@PathVariable long id) {
-        return this.service.getFaculty(id);
+    public FacultyDto getFaculty(@PathVariable long id) {
+        return this.service.getFacultyDto(id);
     }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public FacultyDto createDetail(@RequestBody @Valid FacultyDto dto) {
+    public FacultyDto createFaculty(@RequestBody @Valid FacultyDto dto) {
         return service.createFaculty(dto);
     }
 
     @GetMapping
-    public Page<FacultyDto> getDetails(@PageableDefault(sort = "name", direction = Sort.Direction.ASC) Pageable pageable) {
+    public Page<FacultyDto> getFaculties(@PageableDefault(sort = "name", direction = Sort.Direction.ASC) Pageable pageable) {
         return service.getFaculties(pageable);
     }
 
     @PutMapping("/{id}")
-    public FacultyDto updateDetail(@PathVariable long id, @RequestBody @Valid FacultyDto body) {
+    public FacultyDto updateFaculty(@PathVariable long id, @RequestBody @Valid FacultyDto body) {
         return service.updateFaculty(id, body);
     }
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public void deteteDetail(@PathVariable long id) {
+    public void deleteFaculty(@PathVariable long id) {
         service.deleteFaculty(id);
     }
 }

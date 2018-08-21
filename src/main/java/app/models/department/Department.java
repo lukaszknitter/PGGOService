@@ -6,9 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 @Entity
 @Getter
@@ -16,9 +14,9 @@ import javax.persistence.ManyToOne;
 @NoArgsConstructor
 public class Department extends BaseEntity {
 
-    @ManyToOne
-    public Faculty facultyModel;
-
     @Column(columnDefinition = "text")
     public String description;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    public Faculty faculty;
 }

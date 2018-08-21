@@ -2,6 +2,7 @@ package app.models.building;
 
 import app.exception.ConflictException;
 import app.exception.ResourceNotFoundException;
+import app.models.faculty.FacultyRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
@@ -17,56 +18,56 @@ import java.util.function.Supplier;
 public class BuildingService {
 
     private final ModelMapper mapper;
-    private final BuildingRepository repository;
+    private final BuildingRepository buildingRepository;
 
     public BuildingDto createBuilding(BuildingDto dto) {
-        Optional<Building> detailWithSameName = repository.findFirstByName(dto.getName());
-        if (detailWithSameName.isPresent()) {
+        Optional<Building> buildingWithSameName = buildingRepository.findFirstByName(dto.getName());
+        if (buildingWithSameName.isPresent()) {
             throw new ConflictException(String.format("Building with name '%s' already exists", dto.getName()));
         }
 
         Building building = mapper.map(dto, Building.class);
-        repository.save(building);
+        buildingRepository.saveAndFlush(building);
         return mapper.map(building, BuildingDto.class);
     }
 
     public BuildingDto getBuilding(long id) {
-        Building building = repository.findById(id).orElseThrow(detailNotFoundException(id));
+        Building building = buildingRepository.findById(id).orElseThrow(buildingNotFoundException(id));
         return mapper.map(building, BuildingDto.class);
     }
 
     public Optional<Building> getBuilding(String name) {
-        return repository.findFirstByName(name);
+        return buildingRepository.findFirstByName(name);
     }
 
     public Page<BuildingDto> getBuildings(Pageable pageable) {
-        Page<Building> result = repository.findAll(pageable);
+        Page<Building> result = buildingRepository.findAll(pageable);
         return result.map(entity -> mapper.map(entity, BuildingDto.class));
     }
 
     public BuildingDto updateBuilding(long id, BuildingDto dto) {
-        Building building = repository.findById(id).orElseThrow((detailNotFoundException(id)));
+        Building building = buildingRepository.findById(id).orElseThrow((buildingNotFoundException(id)));
         mapper.map(dto, building);
 
-        Optional<Building> buildingWithSameName = repository.findFirstByName(dto.getName());
+        Optional<Building> buildingWithSameName = buildingRepository.findFirstByName(dto.getName());
         if (buildingWithSameName.isPresent() && buildingWithSameName.get().getId() != id) {
             throw new ConflictException(String.format("Building with name '%s' already exists", dto.getName()));
         }
 
-        Building saved = repository.save(building);
+        Building saved = buildingRepository.save(building);
         return mapper.map(saved, BuildingDto.class);
     }
 
     public void deleteBuilding(long id) {
-        Building building = repository.findById(id).orElseThrow((detailNotFoundException(id)));
-        repository.delete(building);
+        Building building = buildingRepository.findById(id).orElseThrow((buildingNotFoundException(id)));
+        buildingRepository.delete(building);
     }
 
-    private Supplier<ResourceNotFoundException> detailNotFoundException(long id) {
+    private Supplier<ResourceNotFoundException> buildingNotFoundException(long id) {
         return () -> new ResourceNotFoundException(String.format("Building with id %d could not be found", id));
     }
 
-    private Supplier<ResourceNotFoundException> detailNotFoundException(String name) {
+    private Supplier<ResourceNotFoundException> buildingNotFoundException(String name) {
         return () -> new ResourceNotFoundException(String.format("Building with name %s could not be found", name));
     }
 }

@@ -22,29 +22,29 @@ public class DepartmentController {
     }
 
     @GetMapping("/{id}")
-    public DepartmentDto getDetail(@PathVariable long id) {
+    public DepartmentDto getDepartment(@PathVariable long id) {
         return this.service.getDepartment(id);
     }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public DepartmentDto createDetail(@RequestBody @Valid DepartmentDto dto) {
+    public DepartmentDto createDepartment(@RequestBody @Valid DepartmentDto dto) {
         return service.createDepartment(dto);
     }
 
     @GetMapping
-    public Page<DepartmentDto> getDetails(@PageableDefault(sort = "name", direction = Sort.Direction.ASC) Pageable pageable) {
+    public Page<DepartmentDto> getDepartment(@PageableDefault(sort = "name", direction = Sort.Direction.ASC) Pageable pageable) {
         return service.getDepartments(pageable);
     }
 
     @PutMapping("/{id}")
-    public DepartmentDto updateDetail(@PathVariable long id, @RequestBody @Valid DepartmentDto body) {
+    public DepartmentDto updateDepartment(@PathVariable long id, @RequestBody @Valid DepartmentDto body) {
         return service.updateDepartment(id, body);
     }
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public void deteteDetail(@PathVariable long id) {
+    public void deleteDepartment(@PathVariable long id) {
         service.deleteDepartment(id);
     }
 }

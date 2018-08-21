@@ -2,6 +2,7 @@ package app.models.department;
 
 import app.exception.ConflictException;
 import app.exception.ResourceNotFoundException;
+import app.models.faculty.FacultyService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
@@ -18,6 +19,7 @@ public class DepartmentService {
 
     private final ModelMapper mapper;
     private final DepartmentRepository repository;
+    private final FacultyService facultyService;
 
 
     public DepartmentDto createDepartment(DepartmentDto dto) {
@@ -26,6 +28,7 @@ public class DepartmentService {
             throw new ConflictException(String.format("Department with name '%s' already exists", dto.getName()));
         }
         Department department = mapper.map(dto, Department.class);
+        department.setFaculty(facultyService.getFaculty(dto.getFacultyId()));
 
         repository.save(department);
         return mapper.map(department, DepartmentDto.class);

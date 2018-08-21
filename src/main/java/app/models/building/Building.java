@@ -22,7 +22,6 @@ public class Building extends BaseEntity {
     @Column(columnDefinition = "text")
     public String description;
 
-    @ManyToMany
-    @JoinColumn(name = "buildings_faculties")
+    @ManyToMany(cascade = CascadeType.PERSIST)
     private List<Faculty> faculties;
 }

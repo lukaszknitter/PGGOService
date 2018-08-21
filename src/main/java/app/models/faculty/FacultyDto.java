@@ -13,8 +13,8 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class FacultyDto {
-    private long id;
     private String name;
+
     private String tag;
 
     private List<Department> departments;

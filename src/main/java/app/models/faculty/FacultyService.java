@@ -2,6 +2,7 @@ package app.models.faculty;
 
 import app.exception.ConflictException;
 import app.exception.ResourceNotFoundException;
+import app.models.department.DepartmentService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
@@ -19,22 +20,26 @@ public class FacultyService {
     private final ModelMapper mapper;
     private final FacultyRepository repository;
 
-
     public FacultyDto createFaculty(FacultyDto dto) {
         Optional<Faculty> facultyWithSameName = repository.findFirstByName(dto.getName());
         if (facultyWithSameName.isPresent()) {
             throw new ConflictException(String.format("Faculty with name '%s' already exists", dto.getName()));
         }
-        Faculty department = mapper.map(dto, Faculty.class);
+        Faculty faculty = mapper.map(dto, Faculty.class);
 
-        repository.save(department);
-        return mapper.map(department, FacultyDto.class);
+        repository.save(faculty);
+        return mapper.map(faculty, FacultyDto.class);
     }
 
-    public FacultyDto getFaculty(long id) {
-        Faculty department = repository.findById(id)
+    public FacultyDto getFacultyDto(long id) {
+        Faculty faculty = repository.findById(id)
                 .orElseThrow(facultyNotFoundException(id));
-        return mapper.map(department, FacultyDto.class);
+        return mapper.map(faculty, FacultyDto.class);
+    }
+
+    public Faculty getFaculty(long id) {
+        Faculty faculty = repository.findById(id).orElseThrow(facultyNotFoundException(id));
+        return faculty;
     }
 
     public Optional<Faculty> getFaculty(String name) {
@@ -61,8 +66,8 @@ public class FacultyService {
     }
 
     public void deleteFaculty(long id) {
-        Faculty department = repository.findById(id).orElseThrow((facultyNotFoundException(id)));
-        repository.delete(department);
+        Faculty faculty = repository.findById(id).orElseThrow((facultyNotFoundException(id)));
+        repository.delete(faculty);
     }
 
     private Supplier<ResourceNotFoundException> facultyNotFoundException(long id) {
@@ -70,6 +75,6 @@ public class FacultyService {
     }
 
     private Supplier<ResourceNotFoundException> facultyNotFoundException(String name) {
-        return () -> new ResourceNotFoundException(String.format("Faculty with id %s could not be found", name));
+        return () -> new ResourceNotFoundException(String.format("Faculty with name %s could not be found", name));
     }
 }

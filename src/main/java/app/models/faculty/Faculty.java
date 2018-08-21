@@ -16,10 +16,9 @@ import java.util.List;
 @NoArgsConstructor
 public class Faculty extends BaseEntity {
 
-    @OneToMany(mappedBy = "facultyModel")
-    private List<Department> departments;
+    @OneToMany(mappedBy="faculty", fetch=FetchType.EAGER, cascade=CascadeType.ALL)
+    public List<Department> departments;
 
-    @ManyToMany
-    @JoinColumn(name = "buildings_faculties")
-    private List<Building> buildings;
+    @ManyToMany(cascade = CascadeType.ALL)
+    public List<Building> buildings;
 }
