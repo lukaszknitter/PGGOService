@@ -1,0 +1,9 @@
+[
+{
+  "id": 1,
+  "tag": "NETI",
+  "name": "Budynek Nowego ETI",
+  "picture": "picture.jpg albo string",
+  "description": "To jest opis nowego ETI"
+}
+]

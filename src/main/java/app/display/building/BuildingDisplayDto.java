@@ -1,22 +1,25 @@
-package app.models.department;
+package app.display.building;
 
+import app.display.coordinate.Coordinate;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class DepartmentDto {
+public class BuildingDisplayDto {
     private long id;
 
     private String name;
 
     private String tag;
 
-    private String description;
+    public long buildingId;
 
-    private long facultyId;
+    private List<Coordinate> coordinates;
 }

@@ -16,7 +16,7 @@ import java.util.List;
 @NoArgsConstructor
 public class Faculty extends BaseEntity {
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "faculty_id")
     public List<Department> departments;
 

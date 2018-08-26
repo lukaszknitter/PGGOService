@@ -27,6 +27,7 @@ public class DepartmentService {
         if (departmentWithSameName.isPresent()) {
             throw new ConflictException(String.format("Department with name '%s' already exists", dto.getName()));
         }
+        //TODO WAZNE
         Department department = mapper.map(dto, Department.class);
         department.setFaculty(facultyService.getFaculty(dto.getFacultyId()));
 

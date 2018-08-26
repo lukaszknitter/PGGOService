@@ -1,0 +1,62 @@
+[
+{
+  "id": 1,
+  "tag": "NETI",
+  "name": "Nazwa1",
+  "buildingId": 0,
+  "coordinates": [
+    {
+      "longitude": 18.612276,
+      "latitude": 54.371483
+    },
+    {
+      "longitude": 18.612071,
+      "latitude": 54.371613
+    },
+    {
+      "longitude": 18.611709,
+      "latitude": 54.371678
+    },
+    {
+      "longitude": 18.61170889,
+      "latitude": 54.37167859
+    },
+    {
+      "longitude": 18.6118261,
+      "latitude": 54.37189876
+    },
+    {
+      "longitude": 18.61219848,
+      "latitude": 54.37183237
+    },
+    {
+      "longitude": 18.61247273,
+      "latitude": 54.37187026
+    },
+    {
+      "longitude": 18.61274931,
+      "latitude": 54.37201993
+    },
+    {
+      "longitude": 18.61301465,
+      "latitude": 54.37185386
+    },
+    {
+      "longitude": 18.61273455,
+      "latitude": 54.37170126
+    },
+    {
+      "longitude": 18.61265178,
+      "latitude": 54.37154415
+    },
+    {
+      "longitude": 18.61273709,
+      "latitude": 54.37132511
+    },
+    {
+      "longitude": 18.61235991,
+      "latitude": 54.3712744
+    }
+  ]
+}
+]

@@ -2,7 +2,6 @@ package app.models.building;
 
 import app.exception.ConflictException;
 import app.exception.ResourceNotFoundException;
-import app.models.faculty.FacultyRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
@@ -26,8 +25,7 @@ public class BuildingService {
             throw new ConflictException(String.format("Building with name '%s' already exists", dto.getName()));
         }
 
-        Building building = mapper.map(dto, Building.class);
-        buildingRepository.saveAndFlush(building);
+        Building building = buildingRepository.saveAndFlush(mapper.map(dto, Building.class));
         return mapper.map(building, BuildingDto.class);
     }
 

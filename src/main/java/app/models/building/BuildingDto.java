@@ -13,6 +13,8 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class BuildingDto {
+    private long id;
+
     private String name;
 
     private String tag;

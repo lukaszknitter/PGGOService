@@ -1,13 +1,15 @@
 package app.models.building;
 
+import app.models.BaseEntity;
 import app.models.faculty.Faculty;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import app.models.BaseEntity;
 
-import javax.persistence.*;
-import java.io.InputStream;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
 import java.util.List;
 
 @Entity

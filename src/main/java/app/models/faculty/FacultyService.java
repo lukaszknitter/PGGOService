@@ -2,13 +2,15 @@ package app.models.faculty;
 
 import app.exception.ConflictException;
 import app.exception.ResourceNotFoundException;
-import app.models.department.DepartmentService;
+import app.models.department.Department;
+import app.models.department.DepartmentDto;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.function.Supplier;
 
@@ -38,8 +40,7 @@ public class FacultyService {
     }
 
     public Faculty getFaculty(long id) {
-        Faculty faculty = repository.findById(id).orElseThrow(facultyNotFoundException(id));
-        return faculty;
+        return repository.findById(id).orElseThrow(facultyNotFoundException(id));
     }
 
     public Optional<Faculty> getFaculty(String name) {
@@ -76,5 +77,15 @@ public class FacultyService {
 
     private Supplier<ResourceNotFoundException> facultyNotFoundException(String name) {
         return () -> new ResourceNotFoundException(String.format("Faculty with name %s could not be found", name));
+    }
+
+    public void addDepartment(long id, DepartmentDto departmentDto) {
+        Faculty faculty = repository.findById(id).orElseThrow((facultyNotFoundException(id)));
+        Department department = mapper.map(departmentDto, Department.class);
+
+        List<Department> departments = faculty.getDepartments();
+        departments.add(department);
+        faculty.setDepartments(departments);
+        repository.save(faculty);
     }
 }
