@@ -25,11 +25,11 @@ public class FacultyService {
     public FacultyDto createFaculty(FacultyDto dto) {
         Optional<Faculty> facultyWithSameName = repository.findFirstByName(dto.getName());
         if (facultyWithSameName.isPresent()) {
-            throw new ConflictException(String.format("Faculty with name '%s' already exists", dto.getName()));
+            dto.setId(-1);
+            return dto;
+            //throw new ConflictException(String.format("Faculty with name '%s' already exists", dto.getName()));
         }
-        Faculty faculty = mapper.map(dto, Faculty.class);
-
-        repository.save(faculty);
+        Faculty faculty = repository.save(mapper.map(dto, Faculty.class));
         return mapper.map(faculty, FacultyDto.class);
     }
 

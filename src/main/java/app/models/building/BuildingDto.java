@@ -1,6 +1,5 @@
 package app.models.building;
 
-import app.models.faculty.Faculty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -23,5 +22,5 @@ public class BuildingDto {
 
     public String description;
 
-    private List<Faculty> faculties;
+    private List<Long> faculties;
 }

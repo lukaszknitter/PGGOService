@@ -2,12 +2,15 @@ package app.models.building;
 
 import app.exception.ConflictException;
 import app.exception.ResourceNotFoundException;
+import app.models.faculty.Faculty;
+import app.models.faculty.FacultyDto;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.function.Supplier;
 
@@ -22,7 +25,9 @@ public class BuildingService {
     public BuildingDto createBuilding(BuildingDto dto) {
         Optional<Building> buildingWithSameName = buildingRepository.findFirstByName(dto.getName());
         if (buildingWithSameName.isPresent()) {
-            throw new ConflictException(String.format("Building with name '%s' already exists", dto.getName()));
+            dto.setId(-1);
+            return dto;
+            //throw new ConflictException(String.format("Building with name '%s' already exists", dto.getName()));
         }
 
         Building building = buildingRepository.saveAndFlush(mapper.map(dto, Building.class));
@@ -67,5 +72,15 @@ public class BuildingService {
 
     private Supplier<ResourceNotFoundException> buildingNotFoundException(String name) {
         return () -> new ResourceNotFoundException(String.format("Building with name %s could not be found", name));
+    }
+
+    public void addFaculty(long id, FacultyDto facultyDto) {
+        Building building = buildingRepository.findById(id).orElseThrow((buildingNotFoundException(id)));
+        Faculty faculty = mapper.map(facultyDto, Faculty.class);
+
+        List<Faculty> faculties = building.getFaculties();
+        faculties.add(faculty);
+        building.setFaculties(faculties);
+        buildingRepository.save(building);
     }
 }

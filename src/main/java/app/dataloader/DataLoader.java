@@ -67,10 +67,10 @@ public class DataLoader {
         Type buildingListType = new TypeToken<ArrayList<BuildingDto>>() {
         }.getType();
 
-        ArrayList<BuildingDisplayDto> buildingDisplays = null;
-        ArrayList<DepartmentDto> departments = null;
-        ArrayList<BuildingDto> buildings = null;
-        ArrayList<FacultyDto> faculties = null;
+        ArrayList<BuildingDisplayDto> buildingDisplays = new ArrayList<>();
+        ArrayList<DepartmentDto> departments = new ArrayList<>();
+        ArrayList<BuildingDto> buildings = new ArrayList<>();
+        ArrayList<FacultyDto> faculties = new ArrayList<>();
 
         for (File file : files) {
             switch (file.getName()) {
@@ -93,35 +93,29 @@ public class DataLoader {
         }
 
         ArrayList<FacultyDto> finalFaculties = faculties;
-        departments.forEach(departmentDto -> {
-            finalFaculties.forEach(facultyDto -> {
-                if (departmentDto.getId() == facultyDto.getId()) {
-                    facultyService.createFaculty(facultyDto);
-                    departmentDto.setFacultyId(facultyDto.getId());
-                    departmentService.createDepartment(departmentDto);
-                }
-            });
-        });
-
         ArrayList<DepartmentDto> finalDepartments = departments;
-        faculties.forEach(facultyDto -> {
-            finalDepartments.forEach(departmentDto -> {
-                if (departmentDto.getId() == facultyDto.getId()) {
-                    facultyService.addDepartment(facultyDto.getId(), departmentDto);
-                }
-            });
-        });
-
         ArrayList<BuildingDisplayDto> finalBuildingDisplays = buildingDisplays;
         buildings.forEach(buildingDto -> {
             finalBuildingDisplays.forEach(buildingDisplayDto -> {
-                if (buildingDto.getId() == buildingDisplayDto.getId()) {
-                    long buildingDisplayId = buildingService.createBuilding(buildingDto).getId();
-                    buildingDisplayDto.setBuildingId(buildingDisplayId);
-                }
+                finalFaculties.forEach(facultyDto -> {
+                    finalDepartments.forEach(departmentDto -> {
+                        if (buildingDto.getId() == buildingDisplayDto.getId()
+                                && departmentDto.getId() == facultyDto.getId()
+                                && buildingDto.getId() == facultyDto.getId()) {
+                            long buildingId = buildingService.createBuilding(buildingDto).getId();
+                            buildingDisplayDto.setBuildingId(buildingId);
+                            long facultyId = facultyService.createFaculty(facultyDto).getId();
+                            facultyDto.setId(facultyId);
+                            buildingService.addFaculty(buildingId, facultyDto);
+                            departmentDto.setFacultyId(facultyId);
+                            facultyService.addDepartment(facultyId, departmentDto);
+                        }
+                    });
+
+                });
             });
         });
-
+        //todo ustawic faculty dla building, zamienic na lambdy
         buildingDisplays.forEach((buildingDisplayService::createBuildingDisplay));
     }
 

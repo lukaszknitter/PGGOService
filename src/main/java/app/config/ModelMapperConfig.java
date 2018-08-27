@@ -22,10 +22,10 @@ public class ModelMapperConfig {
         return mapper;
     }
     private void configureBuildingToBuildingDtoMapping(ModelMapper mapper) {
-        Converter<List<Faculty>, List<String>> getPalettesIds = context -> context.getSource() == null ? null :
+        Converter<List<Faculty>, List<Long>> getPalettesIds = context -> context.getSource() == null ? null :
                 context.getSource()
                         .stream()
-                        .map(Faculty::getTag)
+                        .map(Faculty::getId)
                         .collect(Collectors.toList());
 
         mapper.createTypeMap(Building.class, BuildingDto.class)
