@@ -1,7 +1,12 @@
 [
 {
-  "id": 1,
+  "id": 110,
   "tag": "NETI",
   "name": "Elektroniki, Telekomunikacji i Informatyki"
+},
+{
+  "id": 120,
+  "tag": "NETI",
+  "name": "Moze jakis inny wydzial, kto wie"
 }
 ]

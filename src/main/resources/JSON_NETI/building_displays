@@ -1,6 +1,6 @@
 [
 {
-  "id": 1,
+  "id": 100,
   "tag": "NETI",
   "name": "Nazwa1",
   "buildingId": 0,
@@ -56,6 +56,18 @@
     {
       "longitude": 18.61235991,
       "latitude": 54.3712744
+    }
+  ]
+},
+{
+  "id": 200,
+  "tag": "NETI",
+  "name": "Nazwa2",
+  "buildingId": 0,
+  "coordinates": [
+    {
+      "longitude": 18.2,
+      "latitude": 54.371483
     }
   ]
 }

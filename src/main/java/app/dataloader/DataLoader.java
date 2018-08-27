@@ -23,8 +23,10 @@ import java.io.InputStream;
 import java.lang.reflect.Type;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -95,7 +97,56 @@ public class DataLoader {
         ArrayList<FacultyDto> finalFaculties = faculties;
         ArrayList<DepartmentDto> finalDepartments = departments;
         ArrayList<BuildingDisplayDto> finalBuildingDisplays = buildingDisplays;
-        buildings.forEach(buildingDto -> {
+        int buildingsCount = 2;
+        int facultyDivider = 10;
+        int buildingDivider = 100;
+        for (int i = 0; i < buildingsCount; i++) {
+            int finalI = i + 1;
+            BuildingDto buildingWithId = buildings
+                    .stream()
+                    .filter(buildingDto ->
+                            buildingDto.getId() == finalI * buildingDivider)
+                    .collect(Collectors.toList()).get(0);
+
+            BuildingDisplayDto buildingDisplayWithId = buildingDisplays
+                    .stream()
+                    .filter(buildingDisplayDto ->
+                            buildingDisplayDto.getId() == finalI * buildingDivider) // == 100
+                    .collect(Collectors.toList()).get(0);
+
+            List<FacultyDto> facultiesWithId = faculties
+                    .stream()
+                    .filter(facultyDto ->
+                            facultyDto.getId() >= finalI * buildingDivider + facultyDivider // >= 110
+                                    && facultyDto.getId() < (finalI + 1) * buildingDivider) // < 200
+                    .collect(Collectors.toList());
+
+            List<DepartmentDto> departmentsWithId = departments
+                    .stream()
+                    .filter(departmentDto ->
+                            departmentDto.getId() >= finalI * buildingDivider + facultyDivider // >= 110
+                                    && departmentDto.getId() < (finalI + 1) * buildingDivider) // < 200
+                    .collect(Collectors.toList());
+
+            long buildingId = buildingService.createBuilding(buildingWithId).getId();
+            buildingDisplayWithId.setBuildingId(buildingId);
+
+            facultiesWithId.forEach(facultyDto -> {
+                long facultyId = facultyService.createFaculty(facultyDto).getId();
+                long oldFacultyId = facultyDto.getId();
+                facultyDto.setId(facultyId);
+                buildingService.addFaculty(buildingId, facultyDto);
+                departmentsWithId
+                        .stream()
+                        .filter(departmentDto -> departmentDto.getId() > oldFacultyId
+                                && departmentDto.getId() < oldFacultyId + facultyDivider)
+                        .forEach(departmentDto -> {
+                            departmentDto.setFacultyId(facultyId);
+                            facultyService.addDepartment(facultyId, departmentDto);
+                        });
+            });
+        }
+       /*buildings.forEach(buildingDto -> {
             finalBuildingDisplays.forEach(buildingDisplayDto -> {
                 finalFaculties.forEach(facultyDto -> {
                     finalDepartments.forEach(departmentDto -> {
@@ -104,9 +155,11 @@ public class DataLoader {
                                 && buildingDto.getId() == facultyDto.getId()) {
                             long buildingId = buildingService.createBuilding(buildingDto).getId();
                             buildingDisplayDto.setBuildingId(buildingId);
+
                             long facultyId = facultyService.createFaculty(facultyDto).getId();
                             facultyDto.setId(facultyId);
                             buildingService.addFaculty(buildingId, facultyDto);
+
                             departmentDto.setFacultyId(facultyId);
                             facultyService.addDepartment(facultyId, departmentDto);
                         }
@@ -114,7 +167,7 @@ public class DataLoader {
 
                 });
             });
-        });
+        });*/
         //todo ustawic faculty dla building, zamienic na lambdy
         buildingDisplays.forEach((buildingDisplayService::createBuildingDisplay));
     }
