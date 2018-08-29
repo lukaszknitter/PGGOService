@@ -1,6 +1,5 @@
 package app.models.faculty;
 
-import app.models.department.Department;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,10 +13,14 @@ import java.util.List;
 @AllArgsConstructor
 public class FacultyDto {
     private long id;
-
     private String name;
-
     private String tag;
+    private List<Long> departments;
 
-    private List<Department> departments;
+    public FacultyDto(FacultyDto facultyDto) {
+        this.id = facultyDto.getId();
+        this.name = facultyDto.getName();
+        this.tag = facultyDto.getTag();
+        this.departments = facultyDto.getDepartments();
+    }
 }

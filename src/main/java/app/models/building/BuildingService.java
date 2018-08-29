@@ -25,9 +25,7 @@ public class BuildingService {
     public BuildingDto createBuilding(BuildingDto dto) {
         Optional<Building> buildingWithSameName = buildingRepository.findFirstByName(dto.getName());
         if (buildingWithSameName.isPresent()) {
-            dto.setId(-1);
-            return dto;
-            //throw new ConflictException(String.format("Building with name '%s' already exists", dto.getName()));
+            throw new ConflictException(String.format("Building with name '%s' already exists", dto.getName()));
         }
 
         Building building = buildingRepository.saveAndFlush(mapper.map(dto, Building.class));

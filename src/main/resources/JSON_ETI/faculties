@@ -1,0 +1,19 @@
+[
+{
+  "id": 10001,
+  "tag": "NETI",
+  "name": "Elektroniki, Telekomunikacji i Informatyki",
+    "departments":[
+      "10001",
+      "10002"
+    ]
+},
+{
+  "id": 10002,
+  "tag":"NETI",
+  "name":"Moze jakis inny wydzial, kto wie",
+  "departments":[
+    "10003"
+  ]
+}
+]

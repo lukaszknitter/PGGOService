@@ -1,18 +1,18 @@
 [
 {
-  "id": 111,
+  "id": 10001,
   "tag": "NETI",
   "name": "KISI",
   "description": "Najlepsza katedra"
 },
 {
-  "id": 112,
+  "id": 10002,
   "tag": "NETI",
   "name": "KTI",
   "description": "Druga najlepsza katedra"
 },
 {
-  "id": 121,
+  "id": 10003,
   "tag": "NETI",
   "name": "KISI2",
   "description": "COS"

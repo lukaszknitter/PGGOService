@@ -23,10 +23,9 @@ import java.io.InputStream;
 import java.lang.reflect.Type;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -94,81 +93,54 @@ public class DataLoader {
             }
         }
 
-        ArrayList<FacultyDto> finalFaculties = faculties;
-        ArrayList<DepartmentDto> finalDepartments = departments;
-        ArrayList<BuildingDisplayDto> finalBuildingDisplays = buildingDisplays;
-        int buildingsCount = 2;
-        int facultyDivider = 10;
-        int buildingDivider = 100;
-        for (int i = 0; i < buildingsCount; i++) {
-            int finalI = i + 1;
-            BuildingDto buildingWithId = buildings
-                    .stream()
-                    .filter(buildingDto ->
-                            buildingDto.getId() == finalI * buildingDivider)
-                    .collect(Collectors.toList()).get(0);
+        saveDataToDatabase(buildingDisplays, buildings, faculties, departments);
+    }
 
-            BuildingDisplayDto buildingDisplayWithId = buildingDisplays
-                    .stream()
-                    .filter(buildingDisplayDto ->
-                            buildingDisplayDto.getId() == finalI * buildingDivider) // == 100
-                    .collect(Collectors.toList()).get(0);
+    private void saveDataToDatabase(ArrayList<BuildingDisplayDto> buildingDisplays,
+                                    ArrayList<BuildingDto> buildings,
+                                    ArrayList<FacultyDto> faculties,
+                                    ArrayList<DepartmentDto> departments) {
+        buildings.stream()
+                .filter(Objects::nonNull)
+                .forEach(buildingDto -> {
 
-            List<FacultyDto> facultiesWithId = faculties
-                    .stream()
-                    .filter(facultyDto ->
-                            facultyDto.getId() >= finalI * buildingDivider + facultyDivider // >= 110
-                                    && facultyDto.getId() < (finalI + 1) * buildingDivider) // < 200
-                    .collect(Collectors.toList());
+                    // copying building dto to save it without faculties, but to keep data in array
+                    BuildingDto buildingDtoWithoutFaculties = new BuildingDto(buildingDto);
+                    buildingDtoWithoutFaculties.setFaculties(null);
+                    long buildingId = buildingService.createBuilding(buildingDtoWithoutFaculties).getId();
 
-            List<DepartmentDto> departmentsWithId = departments
-                    .stream()
-                    .filter(departmentDto ->
-                            departmentDto.getId() >= finalI * buildingDivider + facultyDivider // >= 110
-                                    && departmentDto.getId() < (finalI + 1) * buildingDivider) // < 200
-                    .collect(Collectors.toList());
+                    // saving relation between building and its display
+                    buildingDisplays.stream()
+                            .filter(buildingDisplayDto -> buildingDisplayDto.getId() == buildingDto.getId())
+                            .findFirst().get().setBuildingId(buildingId);
 
-            long buildingId = buildingService.createBuilding(buildingWithId).getId();
-            buildingDisplayWithId.setBuildingId(buildingId);
+                    faculties.stream()
+                            .filter(Objects::nonNull)
+                            .forEach(facultyDto -> {
+                                if (buildingDto.getFaculties() != null
+                                        && buildingDto.getFaculties().contains(facultyDto.getId())) {
+                                    // copying faculty dto to save it without departments, but to keep data in array
+                                    FacultyDto updatedFacultyDto = new FacultyDto(facultyDto);
+                                    updatedFacultyDto.setDepartments(null);
+                                    long facultyId = facultyService.createFaculty(updatedFacultyDto).getId();
+                                    updatedFacultyDto.setId(facultyId);
+                                    // saving relation between building and current faculty
+                                    buildingService.addFaculty(buildingId, updatedFacultyDto);
 
-            facultiesWithId.forEach(facultyDto -> {
-                long facultyId = facultyService.createFaculty(facultyDto).getId();
-                long oldFacultyId = facultyDto.getId();
-                facultyDto.setId(facultyId);
-                buildingService.addFaculty(buildingId, facultyDto);
-                departmentsWithId
-                        .stream()
-                        .filter(departmentDto -> departmentDto.getId() > oldFacultyId
-                                && departmentDto.getId() < oldFacultyId + facultyDivider)
-                        .forEach(departmentDto -> {
-                            departmentDto.setFacultyId(facultyId);
-                            facultyService.addDepartment(facultyId, departmentDto);
-                        });
-            });
-        }
-       /*buildings.forEach(buildingDto -> {
-            finalBuildingDisplays.forEach(buildingDisplayDto -> {
-                finalFaculties.forEach(facultyDto -> {
-                    finalDepartments.forEach(departmentDto -> {
-                        if (buildingDto.getId() == buildingDisplayDto.getId()
-                                && departmentDto.getId() == facultyDto.getId()
-                                && buildingDto.getId() == facultyDto.getId()) {
-                            long buildingId = buildingService.createBuilding(buildingDto).getId();
-                            buildingDisplayDto.setBuildingId(buildingId);
+                                    departments.stream()
+                                            .filter(Objects::nonNull)
+                                            .forEach(departmentDto -> {
+                                                if (facultyDto.getDepartments().contains(departmentDto.getId())) {
+                                                    departmentDto.setFacultyId(facultyId);
+                                                    // saving relation between faculty and current department
+                                                    facultyService.addDepartment(facultyId, departmentDto);
+                                                }
+                                            });
+                                }
 
-                            long facultyId = facultyService.createFaculty(facultyDto).getId();
-                            facultyDto.setId(facultyId);
-                            buildingService.addFaculty(buildingId, facultyDto);
-
-                            departmentDto.setFacultyId(facultyId);
-                            facultyService.addDepartment(facultyId, departmentDto);
-                        }
-                    });
-
+                            });
                 });
-            });
-        });*/
-        //todo ustawic faculty dla building, zamienic na lambdy
+
         buildingDisplays.forEach((buildingDisplayService::createBuildingDisplay));
     }
 

@@ -11,12 +11,8 @@ import lombok.Setter;
 @AllArgsConstructor
 public class DepartmentDto {
     private long id;
-
     private String name;
-
     private String tag;
-
     private String description;
-
     private long facultyId;
 }

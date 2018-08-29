@@ -1,7 +1,6 @@
 package app.models.faculty;
 
 import app.models.BaseEntity;
-import app.models.building.Building;
 import app.models.department.Department;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,6 +19,4 @@ public class Faculty extends BaseEntity {
     @JoinColumn(name = "faculty_id")
     public List<Department> departments;
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    public List<Building> buildings;
 }
