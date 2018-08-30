@@ -2,7 +2,6 @@ package app.models.department;
 
 import app.exception.ConflictException;
 import app.exception.ResourceNotFoundException;
-import app.models.faculty.FacultyService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
@@ -19,7 +18,6 @@ public class DepartmentService {
 
     private final ModelMapper mapper;
     private final DepartmentRepository repository;
-    private final FacultyService facultyService;
 
 
     public DepartmentDto createDepartment(DepartmentDto dto) {
@@ -27,11 +25,7 @@ public class DepartmentService {
         if (departmentWithSameName.isPresent()) {
             throw new ConflictException(String.format("Department with name '%s' already exists", dto.getName()));
         }
-        //TODO WAZNE
-        /*Department department = mapper.map(dto, Department.class);
-        department.setFaculty(facultyService.getFaculty(dto.getFacultyId()));
-        repository.save(department);*/
-        Department department = repository.save(mapper.map(dto, Department.class));
+        Department department = repository.saveAndFlush(mapper.map(dto, Department.class));
         return mapper.map(department, DepartmentDto.class);
     }
 
@@ -39,10 +33,6 @@ public class DepartmentService {
         Department department = repository.findById(id)
                 .orElseThrow(departmentNotFoundException(id));
         return mapper.map(department, DepartmentDto.class);
-    }
-
-    public Optional<Department> getDepartment(String name) {
-        return repository.findFirstByName(name);
     }
 
     public Page<DepartmentDto> getDepartments(Pageable pageable) {
@@ -60,7 +50,7 @@ public class DepartmentService {
             throw new ConflictException(String.format("Department with name '%s' already exists", dto.getName()));
         }
 
-        Department saved = repository.save(department);
+        Department saved = repository.saveAndFlush(department);
         return mapper.map(saved, DepartmentDto.class);
     }
 
@@ -72,9 +62,5 @@ public class DepartmentService {
 
     private Supplier<ResourceNotFoundException> departmentNotFoundException(long id) {
         return () -> new ResourceNotFoundException(String.format("Department with id %d could not be found", id));
-    }
-
-    private Supplier<ResourceNotFoundException> departmentNotFoundException(String name) {
-        return () -> new ResourceNotFoundException(String.format("Department with id %s could not be found", name));
     }
 }

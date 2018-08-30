@@ -11,22 +11,20 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class BuildingDto {
+public class BuildingCreationDto {
     public String picture;
     public String description;
     private long id;
     private String name;
     private String tag;
-    private List<String> facultiesNames;
     private List<Long> facultiesIds;
 
-    public BuildingDto(BuildingDto buildingDto) {
+    public BuildingCreationDto(BuildingCreationDto buildingDto) {
         this.id = buildingDto.getId();
         this.name = buildingDto.getName();
         this.tag = buildingDto.getTag();
         this.picture = buildingDto.getPicture();
         this.description = buildingDto.getDescription();
-        this.facultiesNames = buildingDto.getFacultiesNames();
         this.facultiesIds = buildingDto.getFacultiesIds();
     }
 }

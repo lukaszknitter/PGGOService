@@ -35,10 +35,6 @@ public class BuildingDisplayService {
         return mapper.map(buildingDisplay, BuildingDisplayDto.class);
     }
 
-    public Optional<BuildingDisplay> getBuildingDisplay(String name) {
-        return buildingDisplayRepository.findFirstByName(name);
-    }
-
     public Page<BuildingDisplayDto> getBuildingDisplays(Pageable pageable) {
         Page<BuildingDisplay> result = buildingDisplayRepository.findAll(pageable);
         return result.map(entity -> mapper.map(entity, BuildingDisplayDto.class));
@@ -53,7 +49,7 @@ public class BuildingDisplayService {
             throw new ConflictException(String.format("Building display with name '%s' already exists", dto.getName()));
         }
 
-        BuildingDisplay saved = buildingDisplayRepository.save(buildingDisplay);
+        BuildingDisplay saved = buildingDisplayRepository.saveAndFlush(buildingDisplay);
         return mapper.map(saved, BuildingDisplayDto.class);
     }
 
@@ -64,9 +60,5 @@ public class BuildingDisplayService {
 
     private Supplier<ResourceNotFoundException> buildingDisplayNotFoundException(long id) {
         return () -> new ResourceNotFoundException(String.format("Building display with id %d could not be found", id));
-    }
-
-    private Supplier<ResourceNotFoundException> buildingDisplayNotFoundException(String name) {
-        return () -> new ResourceNotFoundException(String.format("Building display with name %s could not be found", name));
     }
 }

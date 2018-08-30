@@ -28,7 +28,7 @@ public class BuildingController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public BuildingDto createBuilding(@RequestBody @Valid BuildingDto dto) {
+    public BuildingDto createBuilding(@RequestBody @Valid BuildingCreationDto dto) {
         return service.createBuilding(dto);
     }
 
@@ -38,7 +38,7 @@ public class BuildingController {
     }
 
     @PutMapping("/{id}")
-    public BuildingDto updateBuilding(@PathVariable long id, @RequestBody @Valid BuildingDto body) {
+    public BuildingDto updateBuilding(@PathVariable long id, @RequestBody @Valid BuildingCreationDto body) {
         return service.updateBuilding(id, body);
     }
 

@@ -23,8 +23,9 @@ public class Application {
 
     @EventListener(ApplicationReadyEvent.class)
     public void fillDatabase() {
+        long startTime = System.currentTimeMillis();
         System.out.println("Filling up database...");
         dataLoader.loadBuildings();
-        System.out.println("Database filled up!");
+        System.out.println("Database filled up in " + (double) (System.currentTimeMillis() - startTime) / 1000 + "s");
     }
 }
