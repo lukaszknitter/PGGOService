@@ -16,18 +16,18 @@ import java.time.ZonedDateTime;
 public abstract class BaseEntity {
     @Id
     @GeneratedValue
-    public long id;
+    private long id;
 
     @Column(columnDefinition = "nvarchar(255)")
-    public String name;
+    private String name;
 
     @Column(columnDefinition = "nvarchar(255)")
-    public String tag;
+    private String tag;
 
-    public ZonedDateTime createDate;
+    private ZonedDateTime createDate;
 
     @PrePersist
-    public void setUpCreateDate() {
+    private void setUpCreateDate() {
         createDate = ZonedDateTime.now();
     }
 }

@@ -28,7 +28,7 @@ public class FacultyController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public FacultyDto createFaculty(@RequestBody @Valid FacultyDto dto) {
+    public FacultyDto createFaculty(@RequestBody @Valid FacultyCreationDto dto) {
         return service.createFaculty(dto);
     }
 
@@ -38,7 +38,7 @@ public class FacultyController {
     }
 
     @PutMapping("/{id}")
-    public FacultyDto updateFaculty(@PathVariable long id, @RequestBody @Valid FacultyDto body) {
+    public FacultyDto updateFaculty(@PathVariable long id, @RequestBody @Valid FacultyCreationDto body) {
         return service.updateFaculty(id, body);
     }
 

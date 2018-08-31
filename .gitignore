@@ -35,4 +35,4 @@ gen
 .idea/dataSources.xml
 .idea/dataSources/
 src/test/
-target/generated-sources/
+target/

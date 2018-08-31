@@ -1,0 +1,20 @@
+[
+{
+  "id":10001,
+  "tag":"MECH",
+  "name":"Budynek Wydziału Mechanicznego",
+  "picture":"mech_building.JPG",
+  "description":"To jest opis mechanicznego",
+  "facultiesIds":[
+    "10001",
+    "10002"
+  ]
+},
+{
+  "id":10002,
+  "tag":"MECH",
+  "name":"Inny Budynek Wydziału Mechanicznego",
+  "picture":"mechaniczny_building.png",
+  "description":"To jest opis mechanicznego"
+}
+]

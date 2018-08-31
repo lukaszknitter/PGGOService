@@ -1,7 +1,6 @@
 package app.models.faculty;
 
 import app.models.BaseEntity;
-import app.models.building.Building;
 import app.models.department.Department;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,10 +15,8 @@ import java.util.List;
 @NoArgsConstructor
 public class Faculty extends BaseEntity {
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
     @JoinColumn(name = "faculty_id")
     public List<Department> departments;
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    public List<Building> buildings;
 }

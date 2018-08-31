@@ -1,6 +1,5 @@
 package app.models.building;
 
-import app.models.faculty.Faculty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,13 +12,21 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class BuildingDto {
-    private String name;
-
-    private String tag;
-
     public String picture;
-
     public String description;
+    private long id;
+    private String name;
+    private String tag;
+    private List<String> facultiesNames;
+    private List<Long> facultiesIds;
 
-    private List<Faculty> faculties;
+    public BuildingDto(BuildingDto buildingDto) {
+        this.id = buildingDto.getId();
+        this.name = buildingDto.getName();
+        this.tag = buildingDto.getTag();
+        this.picture = buildingDto.getPicture();
+        this.description = buildingDto.getDescription();
+        this.facultiesNames = buildingDto.getFacultiesNames();
+        this.facultiesIds = buildingDto.getFacultiesIds();
+    }
 }
