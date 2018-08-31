@@ -13,17 +13,34 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.core.io.support.ResourcePatternResolver;
+import sun.misc.BASE64Encoder;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.io.*;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 @Configuration
 public class ModelMapperConfig {
+
+    public static String encodeToString(BufferedImage image, String type) {
+        String imageString = null;
+        ByteArrayOutputStream bos = new ByteArrayOutputStream();
+
+        try {
+            ImageIO.write(image, type, bos);
+            byte[] imageBytes = bos.toByteArray();
+
+            BASE64Encoder encoder = new BASE64Encoder();
+            imageString = encoder.encode(imageBytes);
+
+            bos.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return imageString;
+    }
 
     @Bean
     ModelMapper modelMapper() {
@@ -60,24 +77,12 @@ public class ModelMapperConfig {
             try {
                 Resource[] resources = resolver.getResources("classpath:/*");
                 for (Resource resource : resources) {
-                    Pattern pattern = Pattern.compile("JSON_.*");
-                    if (resource.getFilename() != null) {
-                        Matcher matcher = pattern.matcher(resource.getFilename());
-                        if (matcher.find()) {
-                            File[] files = resource.getFile().listFiles();
-                            for (File file : files) {
-                                if (file.getName().equals(context.getSource())) {
-                                    final InputStream inputStream = new DataInputStream(new FileInputStream(file));
-                                    StringBuilder textBuilder = new StringBuilder();
-                                    try (Reader reader = new BufferedReader(new InputStreamReader
-                                            (inputStream, Charset.forName(StandardCharsets.UTF_8.name())))) {
-                                        int c = 0;
-                                        while ((c = reader.read()) != -1) {
-                                            textBuilder.append((char) c);
-                                        }
-                                    }
-                                    return textBuilder.toString();
-                                }
+                    File[] files = resource.getFile().listFiles();
+                    if (files != null) {
+                        for (File file : files) {
+                            if (file.getName().equals(context.getSource())) {
+                                final InputStream inputStream = new DataInputStream(new FileInputStream(file));
+                                return encodeToString(ImageIO.read(inputStream), "png");
                             }
                         }
                     }
@@ -91,7 +96,6 @@ public class ModelMapperConfig {
         mapper.createTypeMap(BuildingCreationDto.class, Building.class)
                 .addMappings(expr -> expr.using(getPicture).map(BuildingCreationDto::getPicture, Building::setPicture));
     }
-
 
     private void configureFacultyToFacultyDtoMapping(ModelMapper mapper) {
         Converter<List<Department>, List<Long>> getDepartmentsIds = context -> context.getSource() == null ? null :

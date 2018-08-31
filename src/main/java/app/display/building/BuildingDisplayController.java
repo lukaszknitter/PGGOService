@@ -1,14 +1,11 @@
 package app.display.building;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
-import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.ArrayList;
 
 @RestController
 @RequestMapping("/building/display")
@@ -33,8 +30,8 @@ public class BuildingDisplayController {
     }
 
     @GetMapping
-    public Page<BuildingDisplayDto> getBuildings(@PageableDefault(sort = "name", direction = Sort.Direction.ASC) Pageable pageable) {
-        return service.getBuildingDisplays(pageable);
+    public ArrayList<BuildingDisplayDto> getBuildings() {
+        return service.getBuildingDisplays();
     }
 
     @PutMapping("/{id}")

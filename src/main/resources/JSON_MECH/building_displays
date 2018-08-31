@@ -1,0 +1,50 @@
+[
+{
+  "id": 10001,
+  "tag": "MECH",
+  "name": "Mechaniczny",
+  "buildingId": 1,
+  "coordinates": [
+    {
+      "longitude": 18.614763,
+      "latitude": 54.372192
+    },
+    {
+      "longitude": 18.615242,
+      "latitude": 54.372119
+    },
+    {
+      "longitude": 18.614664,
+      "latitude": 54.371031
+    },
+    {
+      "longitude": 18.614184,
+      "latitude": 54.371120
+    }
+  ]
+},
+{
+  "id": 10002,
+  "tag": "NETI",
+  "name": "Mechaniczny 2",
+  "buildingId": 2,
+  "coordinates": [
+    {
+      "longitude": 18.614055,
+      "latitude": 54.372348
+    },
+    {
+      "longitude": 18.613744,
+      "latitude": 54.371826
+    },
+    {
+      "longitude": 18.614168,
+      "latitude": 54.371752
+    },
+    {
+      "longitude": 18.614468,
+      "latitude": 54.372250
+    }
+  ]
+}
+]

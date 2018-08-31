@@ -4,10 +4,12 @@ import app.exception.ConflictException;
 import app.exception.ResourceNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
+import org.modelmapper.TypeToken;
 import org.springframework.stereotype.Service;
 
+import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 import java.util.function.Supplier;
 
@@ -35,9 +37,11 @@ public class BuildingDisplayService {
         return mapper.map(buildingDisplay, BuildingDisplayDto.class);
     }
 
-    public Page<BuildingDisplayDto> getBuildingDisplays(Pageable pageable) {
-        Page<BuildingDisplay> result = buildingDisplayRepository.findAll(pageable);
-        return result.map(entity -> mapper.map(entity, BuildingDisplayDto.class));
+    public ArrayList<BuildingDisplayDto> getBuildingDisplays() {
+        ArrayList<BuildingDisplay> result = new ArrayList<>(buildingDisplayRepository.findAll());
+        Type listType = new TypeToken<List<BuildingDisplayDto>>() {
+        }.getType();
+        return mapper.map(result, listType);
     }
 
     public BuildingDisplayDto updateBuildingDisplay(long id, BuildingDisplayDto dto) {
