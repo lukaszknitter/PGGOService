@@ -1,7 +1,6 @@
 package app.config;
 
 import app.models.building.Building;
-import app.models.building.BuildingCreationDto;
 import app.models.building.BuildingDto;
 import app.models.department.Department;
 import app.models.faculty.Faculty;
@@ -24,94 +23,88 @@ import java.util.stream.Collectors;
 @Configuration
 public class ModelMapperConfig {
 
-    public static String encodeToString(BufferedImage image, String type) {
-        String imageString = null;
-        ByteArrayOutputStream bos = new ByteArrayOutputStream();
+	public static String encodeToString(BufferedImage image, String type) {
+		String imageString = null;
+		ByteArrayOutputStream bos = new ByteArrayOutputStream();
 
-        try {
-            ImageIO.write(image, type, bos);
-            byte[] imageBytes = bos.toByteArray();
+		try {
+			ImageIO.write(image, type, bos);
+			byte[] imageBytes = bos.toByteArray();
 
-            BASE64Encoder encoder = new BASE64Encoder();
-            imageString = encoder.encode(imageBytes);
+			BASE64Encoder encoder = new BASE64Encoder();
+			imageString = encoder.encode(imageBytes);
 
-            bos.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return imageString;
-    }
+			bos.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return imageString;
+	}
 
-    @Bean
-    ModelMapper modelMapper() {
-        ModelMapper mapper = new ModelMapper();
+	@Bean
+	ModelMapper modelMapper() {
+		ModelMapper mapper = new ModelMapper();
 
-        configureBuildingDtoToBuildingMapping(mapper);
-        configureBuildingToBuildingDtoMapping(mapper);
-        configureFacultyToFacultyDtoMapping(mapper);
-        return mapper;
-    }
+		configureBuildingToBuildingDtoMapping(mapper);
+		configureFacultyToFacultyDtoMapping(mapper);
+		return mapper;
+	}
 
-    private void configureBuildingToBuildingDtoMapping(ModelMapper mapper) {
-        Converter<List<Faculty>, List<Long>> getFacultiesIds = context -> context.getSource() == null ? null :
-                context.getSource()
-                        .stream()
-                        .map(Faculty::getId)
-                        .collect(Collectors.toList());
+	private void configureBuildingToBuildingDtoMapping(ModelMapper mapper) {
+		Converter<List<Faculty>, List<Long>> getFacultiesIds = context -> context.getSource() == null ? null :
+				context.getSource()
+						.stream()
+						.map(Faculty::getId)
+						.collect(Collectors.toList());
 
-        Converter<List<Faculty>, List<String>> getFacultiesNames = context -> context.getSource() == null ? null :
-                context.getSource()
-                        .stream()
-                        .map(Faculty::getName)
-                        .collect(Collectors.toList());
+		Converter<List<Faculty>, List<String>> getFacultiesNames = context -> context.getSource() == null ? null :
+				context.getSource()
+						.stream()
+						.map(Faculty::getName)
+						.collect(Collectors.toList());
 
-        mapper.createTypeMap(Building.class, BuildingDto.class)
-                .addMappings(expr -> expr.using(getFacultiesIds).map(Building::getFaculties, BuildingDto::setFacultiesIds))
-                .addMappings(expr -> expr.using(getFacultiesNames).map(Building::getFaculties, BuildingDto::setFacultiesNames));
-    }
+		Converter<String, String> getPicture = context -> {
+			ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver(this.getClass().getClassLoader());
+			try {
+				Resource[] resources = resolver.getResources("classpath:/*");
+				for (Resource resource : resources) {
+					File[] files = resource.getFile().listFiles();
+					if (files != null) {
+						for (File file : files) {
+							if (file.getName().equals(context.getSource())) {
+								final InputStream inputStream = new DataInputStream(new FileInputStream(file));
+								return encodeToString(ImageIO.read(inputStream), "png");
+							}
+						}
+					}
+				}
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			return null;
+		};
 
-    // todo parse name of image to string with data
-    private void configureBuildingDtoToBuildingMapping(ModelMapper mapper) {
-        Converter<String, String> getPicture = context -> {
-            ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver(this.getClass().getClassLoader());
-            try {
-                Resource[] resources = resolver.getResources("classpath:/*");
-                for (Resource resource : resources) {
-                    File[] files = resource.getFile().listFiles();
-                    if (files != null) {
-                        for (File file : files) {
-                            if (file.getName().equals(context.getSource())) {
-                                final InputStream inputStream = new DataInputStream(new FileInputStream(file));
-                                return encodeToString(ImageIO.read(inputStream), "png");
-                            }
-                        }
-                    }
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            return null;
-        };
+		mapper.createTypeMap(Building.class, BuildingDto.class)
+				.addMappings(expr -> expr.using(getFacultiesIds).map(Building::getFaculties, BuildingDto::setFacultiesIds))
+				.addMappings(expr -> expr.using(getFacultiesNames).map(Building::getFaculties, BuildingDto::setFacultiesNames))
+				.addMappings(expr -> expr.using(getPicture).map(Building::getPicture, BuildingDto::setPicture));
+	}
 
-        mapper.createTypeMap(BuildingCreationDto.class, Building.class)
-                .addMappings(expr -> expr.using(getPicture).map(BuildingCreationDto::getPicture, Building::setPicture));
-    }
+	private void configureFacultyToFacultyDtoMapping(ModelMapper mapper) {
+		Converter<List<Department>, List<Long>> getDepartmentsIds = context -> context.getSource() == null ? null :
+				context.getSource()
+						.stream()
+						.map(Department::getId)
+						.collect(Collectors.toList());
 
-    private void configureFacultyToFacultyDtoMapping(ModelMapper mapper) {
-        Converter<List<Department>, List<Long>> getDepartmentsIds = context -> context.getSource() == null ? null :
-                context.getSource()
-                        .stream()
-                        .map(Department::getId)
-                        .collect(Collectors.toList());
+		Converter<List<Department>, List<String>> getDepartmentsNames = context -> context.getSource() == null ? null :
+				context.getSource()
+						.stream()
+						.map(Department::getName)
+						.collect(Collectors.toList());
 
-        Converter<List<Department>, List<String>> getDepartmentsNames = context -> context.getSource() == null ? null :
-                context.getSource()
-                        .stream()
-                        .map(Department::getName)
-                        .collect(Collectors.toList());
-
-        mapper.createTypeMap(Faculty.class, FacultyDto.class)
-                .addMappings(expr -> expr.using(getDepartmentsIds).map(Faculty::getDepartments, FacultyDto::setDepartmentsIds))
-                .addMappings(expr -> expr.using(getDepartmentsNames).map(Faculty::getDepartments, FacultyDto::setDepartmentsNames));
-    }
+		mapper.createTypeMap(Faculty.class, FacultyDto.class)
+				.addMappings(expr -> expr.using(getDepartmentsIds).map(Faculty::getDepartments, FacultyDto::setDepartmentsIds))
+				.addMappings(expr -> expr.using(getDepartmentsNames).map(Faculty::getDepartments, FacultyDto::setDepartmentsNames));
+	}
 }

@@ -13,13 +13,9 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class BuildingDisplayDto {
-    private long id;
-
-    private String name;
-
-    private String tag;
-
-    public long buildingId;
-
-    private List<Coordinate> coordinates;
+	public long buildingId;
+	private long id;
+	private String name;
+	private String tag;
+	private List<Coordinate> coordinates;
 }

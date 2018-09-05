@@ -3,7 +3,7 @@ database:
   container_name: pggo-db
   command: mysqld --user=root --verbose
   ports:
-    - "3306:3306"
+  - "3306:3306"
   environment:
     MYSQL_DATABASE: "pggo"
     MYSQL_USER: "admin"

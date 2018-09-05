@@ -15,17 +15,17 @@ import org.springframework.stereotype.Service;
 @AllArgsConstructor
 public class Application {
 
-    private final DataLoader dataLoader;
+	private final DataLoader dataLoader;
 
-    public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(Application.class, args);
+	}
 
-    @EventListener(ApplicationReadyEvent.class)
-    public void fillDatabase() {
-        long startTime = System.currentTimeMillis();
-        System.out.println("Filling up database...");
-        dataLoader.loadBuildings();
-        System.out.println("Database filled up in " + (double) (System.currentTimeMillis() - startTime) / 1000 + "s");
-    }
+	@EventListener(ApplicationReadyEvent.class)
+	public void fillDatabase() {
+		long startTime = System.currentTimeMillis();
+		System.out.println("Filling up database...");
+		dataLoader.loadBuildings();
+		System.out.println("Database filled up in " + (double) (System.currentTimeMillis() - startTime) / 1000 + "s");
+	}
 }

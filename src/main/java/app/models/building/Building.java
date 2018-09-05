@@ -18,12 +18,12 @@ import java.util.List;
 @NoArgsConstructor
 public class Building extends BaseEntity {
 
-    @Column(columnDefinition = "longblob")
-    public String picture;
+	@Column(columnDefinition = "longblob")
+	public String picture;
 
-    @Column(columnDefinition = "text")
-    public String description;
+	@Column(columnDefinition = "text")
+	public String description;
 
-    @ManyToMany(fetch = FetchType.EAGER)
-    private List<Faculty> faculties;
+	@ManyToMany(fetch = FetchType.EAGER)
+	private List<Faculty> faculties;
 }

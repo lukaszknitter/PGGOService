@@ -16,10 +16,10 @@ import java.util.List;
 @NoArgsConstructor
 public class BuildingDisplay extends BaseEntity {
 
-    @OneToOne
-    public Building building;
+	@OneToOne
+	public Building building;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JoinColumn(name = "building_display_id")
-    public List<Coordinate> coordinates;
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@JoinColumn(name = "building_display_id")
+	public List<Coordinate> coordinates;
 }

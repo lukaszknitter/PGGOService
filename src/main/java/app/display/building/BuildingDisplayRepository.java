@@ -6,5 +6,5 @@ import java.util.Optional;
 
 public interface BuildingDisplayRepository extends JpaRepository<BuildingDisplay, Long> {
 
-    Optional<BuildingDisplay> findFirstByName(String name);
+	Optional<BuildingDisplay> findFirstByName(String name);
 }

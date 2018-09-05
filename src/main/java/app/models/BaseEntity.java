@@ -14,20 +14,20 @@ import java.time.ZonedDateTime;
 @AllArgsConstructor
 @MappedSuperclass
 public abstract class BaseEntity {
-    @Id
-    @GeneratedValue
-    private long id;
+	@Id
+	@GeneratedValue
+	private long id;
 
-    @Column(columnDefinition = "nvarchar(255)")
-    private String name;
+	@Column(columnDefinition = "nvarchar(255)")
+	private String name;
 
-    @Column(columnDefinition = "nvarchar(255)")
-    private String tag;
+	@Column(columnDefinition = "nvarchar(255)")
+	private String tag;
 
-    private ZonedDateTime createDate;
+	private ZonedDateTime createDate;
 
-    @PrePersist
-    private void setUpCreateDate() {
-        createDate = ZonedDateTime.now();
-    }
+	@PrePersist
+	private void setUpCreateDate() {
+		createDate = ZonedDateTime.now();
+	}
 }

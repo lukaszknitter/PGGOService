@@ -12,15 +12,15 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class FacultyCreationDto {
-    private long id;
-    private String name;
-    private String tag;
-    private List<Long> departmentsIds;
+	private long id;
+	private String name;
+	private String tag;
+	private List<Long> departmentsIds;
 
-    public FacultyCreationDto(FacultyCreationDto facultyDto) {
-        this.id = facultyDto.getId();
-        this.name = facultyDto.getName();
-        this.tag = facultyDto.getTag();
-        this.departmentsIds = facultyDto.getDepartmentsIds();
-    }
+	public FacultyCreationDto(FacultyCreationDto facultyDto) {
+		this.id = facultyDto.getId();
+		this.name = facultyDto.getName();
+		this.tag = facultyDto.getTag();
+		this.departmentsIds = facultyDto.getDepartmentsIds();
+	}
 }
