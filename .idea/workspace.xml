@@ -23,23 +23,14 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba382a02-5a7d-454c-833d-0ff347578aae" name="Default Changelist" comment="Only pictures not working">
+    <list default="true" id="ba382a02-5a7d-454c-833d-0ff347578aae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/config/ModelMapperConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/config/ModelMapperConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/config/ModelMapperConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/config/ModelMapperConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/models/BaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/models/BaseEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/models/building/Building.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/models/building/Building.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/models/building/BuildingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/models/building/BuildingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/models/building/BuildingDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/models/building/BuildingDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/models/building/BuildingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/models/building/BuildingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/models/department/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/models/department/Department.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/models/department/DepartmentDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/models/department/DepartmentDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/models/department/DepartmentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/models/department/DepartmentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/models/faculty/Faculty.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/models/faculty/Faculty.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/models/faculty/FacultyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/models/faculty/FacultyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/models/faculty/FacultyDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/models/faculty/FacultyDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/models/faculty/FacultyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/models/faculty/FacultyService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/models/building/BuildingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/models/building/BuildingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/models/building/BuildingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/models/building/BuildingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/models/department/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/models/department/DepartmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/models/department/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/models/department/DepartmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/models/faculty/FacultyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/models/faculty/FacultyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/models/faculty/FacultyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/models/faculty/FacultyService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -150,7 +141,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="building" value="24" />
+          <entry key="building" value="25" />
           <entry key="building_display" value="19" />
           <entry key="building_display_coordinates" value="9" />
           <entry key="building_displays" value="1" />
@@ -165,7 +156,7 @@
           <entry key="faculty_buildings" value="8" />
           <entry key="gitignore" value="1" />
           <entry key="hibernate_sequence" value="12" />
-          <entry key="java" value="230" />
+          <entry key="java" value="240" />
           <entry key="sql" value="2" />
           <entry key="xml" value="2" />
           <entry key="yml" value="7" />
@@ -174,8 +165,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="7" />
-          <entry key="Database Element" value="147" />
-          <entry key="JAVA" value="230" />
+          <entry key="Database Element" value="148" />
+          <entry key="JAVA" value="240" />
           <entry key="PLAIN_TEXT" value="10" />
           <entry key="Scratch" value="2" />
           <entry key="XML" value="2" />
@@ -191,16 +182,16 @@
           <entry key="dummy" value="2" />
           <entry key="faculties" value="36" />
           <entry key="gitignore" value="3" />
-          <entry key="java" value="6546" />
-          <entry key="txt" value="227" />
+          <entry key="java" value="6613" />
+          <entry key="txt" value="278" />
           <entry key="xml" value="1" />
           <entry key="yml" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6546" />
-          <entry key="PLAIN_TEXT" value="289" />
+          <entry key="JAVA" value="6613" />
+          <entry key="PLAIN_TEXT" value="340" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="20" />
         </counts>
@@ -218,38 +209,33 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/app/models/building/BuildingController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+              <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
               <folding>
                 <element signature="e#730#731#0" expanded="true" />
                 <element signature="e#781#782#0" expanded="true" />
+                <element signature="e#882#883#0" expanded="true" />
+                <element signature="e#923#924#0" expanded="true" />
+                <element signature="e#980#981#0" expanded="true" />
+                <element signature="e#1024#1025#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/models/building/BuildingCreationDto.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/models/department/DepartmentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="205">
+              <caret line="42" selection-start-line="42" selection-end-line="45" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/models/building/BuildingDto.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/models/faculty/FacultyService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="29" column="55" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/config/ModelMapperConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="175">
+              <caret line="42" column="40" lean-forward="true" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -257,56 +243,77 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/models/faculty/FacultyController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+              <folding>
+                <element signature="e#1020#1021#0" expanded="true" />
+                <element signature="e#1064#1065#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/models/department/Department.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/models/department/DepartmentDto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/models/department/DepartmentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="37" column="31" lean-forward="true" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+              <folding>
+                <element signature="e#1006#1007#0" expanded="true" />
+                <element signature="e#1052#1053#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/models/building/BuildingRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/app/models/building/BuildingService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="420">
+              <caret line="57" selection-start-line="57" selection-end-line="60" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://f29beeb9-3c5c-4b84-9f0a-cd990d2b7ec4/schema/pggo/table/department">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://f29beeb9-3c5c-4b84-9f0a-cd990d2b7ec4/schema/pggo/table/faculty">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://f29beeb9-3c5c-4b84-9f0a-cd990d2b7ec4/schema/pggo/table/hibernate_sequence">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/models/building/Building.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/display/building/BuildingDisplayController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="325">
+              <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+              <folding>
+                <element signature="e#892#893#0" expanded="true" />
+                <element signature="e#935#936#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -351,7 +358,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/models/building/BuildingService.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/faculty/FacultyController.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/department/DepartmentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/department/DepartmentDto.java" />
@@ -385,23 +391,24 @@
         <option value="$PROJECT_DIR$/src/main/java/app/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/models/building/BuildingDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/models/building/BuildingCreationDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/models/building/BuildingController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/models/faculty/FacultyController.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/models/faculty/FacultyCreationDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/models/department/DepartmentService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/JSON_ETI/faculties" />
         <option value="$PROJECT_DIR$/src/main/resources/JSON_ETI/departments" />
         <option value="$PROJECT_DIR$/src/main/java/app/models/building/Building.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/models/faculty/Faculty.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/models/faculty/FacultyService.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/models/department/Department.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/models/faculty/FacultyDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/dataloader/DataLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/display/building/BuildingDisplayController.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/display/building/BuildingDisplayService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/models/building/BuildingService.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/app/config/ModelMapperConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/models/building/BuildingService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/models/building/BuildingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/models/department/DepartmentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/models/department/DepartmentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/models/faculty/FacultyService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/models/faculty/FacultyController.java" />
       </list>
     </option>
   </component>
@@ -477,6 +484,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="display" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PGGOService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PGGOService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="display" type="462c0819:PsiDirectoryNode" />
+              <item name="building" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PGGOService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PGGOService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -488,6 +514,26 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
               <item name="building" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PGGOService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PGGOService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="department" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PGGOService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PGGOService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="faculty" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -508,7 +554,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535735164873" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536168200009" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -582,7 +628,7 @@
       <workItem from="1535647945432" duration="13415000" />
       <workItem from="1535730127761" duration="5267000" />
       <workItem from="1535815343887" duration="550000" />
-      <workItem from="1536167141896" duration="508000" />
+      <workItem from="1536167141896" duration="1026000" />
     </task>
     <task id="LOCAL-00001" summary="Building display, test jsons">
       <created>1535312375588</created>
@@ -633,11 +679,18 @@
       <option name="project" value="LOCAL" />
       <updated>1535734549816</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Pictures stored as file names, converted on demand">
+      <created>1536167864425</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1536167864426</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81303000" />
+    <option name="totallyTimeSpent" value="81821000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -662,14 +715,14 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32972974" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32972974" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39891893" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32985386" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32756758" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32756758" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32972974" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
@@ -707,7 +760,8 @@
     <MESSAGE value="Only pictures not working" />
     <MESSAGE value="Database picture configure" />
     <MESSAGE value="gitignore update" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore update" />
+    <MESSAGE value="Pictures stored as file names, converted on demand" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pictures stored as file names, converted on demand" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -750,13 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/models/department/DepartmentDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/modelmapper/modelmapper/1.1.3/modelmapper-1.1.3.jar!/org/modelmapper/PropertyMap.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -771,13 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/models/department/DepartmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.6.RELEASE/spring-data-commons-2.0.6.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -787,13 +827,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/JSON_ETI/buildings">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/models/faculty/FacultyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/Application.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -813,13 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/models/department/DepartmentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -844,23 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/models/department/Department.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/models/faculty/FacultyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/models/BaseEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -878,24 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/display/building/BuildingDisplayController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding>
-            <element signature="e#1145#1146#0" expanded="true" />
-            <element signature="e#1205#1206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/display/building/BuildingDisplayService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="36" column="69" selection-start-line="36" selection-start-column="69" selection-end-line="36" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/display/building/BuildingDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -907,13 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://f29beeb9-3c5c-4b84-9f0a-cd990d2b7ec4/schema/pggo/table/building">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -935,13 +919,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/models/building/BuildingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
@@ -973,24 +950,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/models/building/Building.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/models/building/BuildingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-          <folding>
-            <element signature="e#730#731#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/models/building/BuildingCreationDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1005,12 +964,126 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://f29beeb9-3c5c-4b84-9f0a-cd990d2b7ec4/schema/pggo/table/building">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/config/ModelMapperConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="283">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/models/building/Building.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/display/building/BuildingDisplayService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="39" column="45" lean-forward="true" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/display/building/BuildingDisplayController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+          <folding>
+            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/models/building/BuildingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+          <folding>
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#781#782#0" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#923#924#0" expanded="true" />
+            <element signature="e#980#981#0" expanded="true" />
+            <element signature="e#1024#1025#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/models/building/BuildingRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/models/building/BuildingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="57" selection-start-line="57" selection-end-line="60" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/models/department/Department.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/models/department/DepartmentDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/models/department/DepartmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="37" column="31" lean-forward="true" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+          <folding>
+            <element signature="e#1006#1007#0" expanded="true" />
+            <element signature="e#1052#1053#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/models/department/DepartmentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="42" selection-start-line="42" selection-end-line="45" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/models/faculty/FacultyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="42" column="40" lean-forward="true" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/models/faculty/FacultyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+          <folding>
+            <element signature="e#1020#1021#0" expanded="true" />
+            <element signature="e#1064#1065#0" expanded="true" />
           </folding>
         </state>
       </provider>

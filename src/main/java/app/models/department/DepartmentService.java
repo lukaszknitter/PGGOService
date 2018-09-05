@@ -4,10 +4,12 @@ import app.exception.ConflictException;
 import app.exception.ResourceNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
+import org.modelmapper.TypeToken;
 import org.springframework.stereotype.Service;
 
+import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 import java.util.function.Supplier;
 
@@ -35,9 +37,11 @@ public class DepartmentService {
 		return mapper.map(department, DepartmentDto.class);
 	}
 
-	public Page<DepartmentDto> getDepartments(Pageable pageable) {
-		Page<Department> result = repository.findAll(pageable);
-		return result.map(entity -> mapper.map(entity, DepartmentDto.class));
+	public ArrayList<DepartmentDto> getDepartments() {
+		ArrayList<Department> result = new ArrayList<>(repository.findAll());
+		Type listType = new TypeToken<List<DepartmentDto>>() {
+		}.getType();
+		return mapper.map(result, listType);
 	}
 
 	public DepartmentDto updateDepartment(long id, DepartmentDto dto) {
