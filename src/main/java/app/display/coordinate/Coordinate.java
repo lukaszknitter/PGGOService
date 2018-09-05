@@ -15,13 +15,13 @@ import javax.persistence.Id;
 @NoArgsConstructor
 public class Coordinate {
 
-    @Id
-    @GeneratedValue
-    public long id;
+	@Id
+	@GeneratedValue
+	public long id;
 
-    @Column(precision = 10, scale = 2)
-    private Double latitude;
+	@Column(precision = 10, scale = 2)
+	private Double latitude;
 
-    @Column(precision = 10, scale = 2)
-    private Double longitude;
+	@Column(precision = 10, scale = 2)
+	private Double longitude;
 }

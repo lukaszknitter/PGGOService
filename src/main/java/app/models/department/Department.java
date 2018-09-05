@@ -14,7 +14,7 @@ import javax.persistence.Entity;
 @NoArgsConstructor
 public class Department extends BaseEntity {
 
-    @Column(columnDefinition = "text")
-    public String description;
+	@Column(columnDefinition = "text")
+	public String description;
 
 }

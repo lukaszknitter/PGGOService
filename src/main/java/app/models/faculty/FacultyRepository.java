@@ -6,5 +6,5 @@ import java.util.Optional;
 
 public interface FacultyRepository extends JpaRepository<Faculty, Long> {
 
-    Optional<Faculty> findFirstByName(String name);
+	Optional<Faculty> findFirstByName(String name);
 }
