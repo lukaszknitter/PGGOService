@@ -6,10 +6,12 @@ import app.models.department.Department;
 import app.models.department.DepartmentDto;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
+import org.modelmapper.TypeToken;
 import org.springframework.stereotype.Service;
 
+import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 import java.util.function.Supplier;
 
@@ -36,9 +38,11 @@ public class FacultyService {
 		return mapper.map(faculty, FacultyDto.class);
 	}
 
-	public Page<FacultyDto> getFaculties(Pageable pageable) {
-		Page<Faculty> result = repository.findAll(pageable);
-		return result.map(entity -> mapper.map(entity, FacultyDto.class));
+	public ArrayList<FacultyDto> getFaculties() {
+		ArrayList<Faculty> result = new ArrayList<>(repository.findAll());
+		Type listType = new TypeToken<List<FacultyDto>>() {
+		}.getType();
+		return mapper.map(result, listType);
 	}
 
 	public FacultyDto updateFaculty(long id, FacultyCreationDto dto) {

@@ -6,11 +6,12 @@ import app.models.faculty.Faculty;
 import app.models.faculty.FacultyCreationDto;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
+import org.modelmapper.TypeToken;
 import org.springframework.stereotype.Service;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
@@ -51,9 +52,11 @@ public class BuildingService {
 		return mapper.map(building, BuildingDto.class);
 	}
 
-	public Page<BuildingDto> getBuildings(Pageable pageable) {
-		Page<Building> result = buildingRepository.findAll(pageable);
-		return result.map(entity -> mapper.map(entity, BuildingDto.class));
+	public ArrayList<BuildingDto> getBuildings() {
+		ArrayList<Building> result = new ArrayList<>(buildingRepository.findAll());
+		Type listType = new TypeToken<List<BuildingDto>>() {
+		}.getType();
+		return mapper.map(result, listType);
 	}
 
 	public BuildingDto updateBuilding(long id, BuildingCreationDto dto) {
