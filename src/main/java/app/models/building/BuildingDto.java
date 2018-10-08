@@ -1,5 +1,6 @@
 package app.models.building;
 
+import app.models.Tag;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,7 +17,7 @@ public class BuildingDto {
 	public String description;
 	private long id;
 	private String name;
-	private String tag;
+	private Tag tag;
 	private List<String> facultiesNames;
 	private List<Long> facultiesIds;
 

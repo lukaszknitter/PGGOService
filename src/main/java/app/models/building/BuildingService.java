@@ -2,6 +2,7 @@ package app.models.building;
 
 import app.exception.ConflictException;
 import app.exception.ResourceNotFoundException;
+import app.models.SearchSpecifications;
 import app.models.faculty.Faculty;
 import app.models.faculty.FacultyCreationDto;
 import lombok.RequiredArgsConstructor;
@@ -27,6 +28,7 @@ public class BuildingService {
 
 	private final ModelMapper mapper;
 	private final BuildingRepository buildingRepository;
+	private final SearchSpecifications searchSpecifications;
 
 	public static <T> Predicate<T> distinctByKey(Function<? super T, ?> keyExtractor) {
 		Set<Object> seen = ConcurrentHashMap.newKeySet();
@@ -52,12 +54,14 @@ public class BuildingService {
 		return mapper.map(building, BuildingDto.class);
 	}
 
-	public ArrayList<BuildingDto> getBuildings() {
-		ArrayList<Building> result = new ArrayList<>(buildingRepository.findAll());
-		Type listType = new TypeToken<List<BuildingDto>>() {
+	public ArrayList<BuildingSearchDto> getBuildings(String name) {
+
+		List result = buildingRepository.findAll(searchSpecifications.nameContains(name));
+		Type listType = new TypeToken<List<BuildingSearchDto>>() {
 		}.getType();
 		return mapper.map(result, listType);
 	}
+
 
 	public BuildingDto updateBuilding(long id, BuildingCreationDto dto) {
 		Building building = buildingRepository.findById(id).orElseThrow((buildingNotFoundException(id)));

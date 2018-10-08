@@ -1,7 +1,7 @@
 [
 {
   "id":10001,
-  "tag":"NETI",
+  "tag": ETI,
   "name":"Budynek Nowego ETI",
   "picture":"eti_building.PNG",
   "description":"To jest opis nowego ETI",
@@ -12,7 +12,7 @@
 },
 {
   "id": 10002,
-  "tag": "NETI",
+  "tag": ETI,
   "name": "Budynek Starego ETI",
   "picture": "stare_building.PNG",
   "description": "To jest opis starego ETI"

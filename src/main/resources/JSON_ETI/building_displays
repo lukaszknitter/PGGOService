@@ -1,9 +1,8 @@
 [
 {
   "id": 10001,
-  "tag": "NETI",
+  "tag": ETI,
   "name": "Nazwa1",
-  "buildingId": 1,
   "coordinates": [
     {
       "longitude": 18.612276,
@@ -61,9 +60,8 @@
 },
 {
   "id": 10002,
-  "tag": "NETI",
+  "tag": ETI,
   "name": "Nazwa2",
-  "buildingId": 2,
   "coordinates": [
     {
       "longitude": 18.612467,

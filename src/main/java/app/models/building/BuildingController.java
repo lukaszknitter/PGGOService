@@ -30,8 +30,8 @@ public class BuildingController {
 	}
 
 	@GetMapping
-	public ArrayList<BuildingDto> getBuildings() {
-		return service.getBuildings();
+	public ArrayList<BuildingSearchDto> getBuildings(@RequestParam(value = "name", required = false) String name) {
+		return service.getBuildings(name);
 	}
 
 	@PutMapping("/{id}")
