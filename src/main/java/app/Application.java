@@ -15,17 +15,23 @@ import org.springframework.stereotype.Service;
 @AllArgsConstructor
 public class Application {
 
+	private static boolean isToLoad = true;
 	private final DataLoader dataLoader;
 
 	public static void main(String[] args) {
+		if (args.length > 0 && "nofill".equals(args[0])) {
+			isToLoad = false;
+		}
 		SpringApplication.run(Application.class, args);
 	}
 
 	@EventListener(ApplicationReadyEvent.class)
 	public void fillDatabase() {
-		long startTime = System.currentTimeMillis();
-		System.out.println("Filling up database...");
-		dataLoader.loadBuildings();
-		System.out.println("Database filled up in " + (double) (System.currentTimeMillis() - startTime) / 1000 + "s");
+		if (isToLoad) {
+			long startTime = System.currentTimeMillis();
+			System.out.println("Filling up database...");
+			dataLoader.loadBuildings();
+			System.out.println("Database filled up in " + (double) (System.currentTimeMillis() - startTime) / 1000 + "s");
+		}
 	}
 }
