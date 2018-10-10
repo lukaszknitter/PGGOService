@@ -22,7 +22,7 @@ public abstract class BaseEntity {
 	private String name;
 
 	@Column(columnDefinition = "nvarchar(255)")
-	private String tag;
+	private Tag tag;
 
 	private ZonedDateTime createDate;
 

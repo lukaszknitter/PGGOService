@@ -1,5 +1,6 @@
 package app.models.building;
 
+import app.models.Tag;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,9 +17,10 @@ public class BuildingDto {
 	public String description;
 	private long id;
 	private String name;
-	private String tag;
+	private Tag tag;
 	private List<String> facultiesNames;
 	private List<Long> facultiesIds;
+	public List<Integer> administrativeNumbers;
 
 	public BuildingDto(BuildingDto buildingDto) {
 		this.id = buildingDto.getId();
@@ -28,5 +30,6 @@ public class BuildingDto {
 		this.description = buildingDto.getDescription();
 		this.facultiesNames = buildingDto.getFacultiesNames();
 		this.facultiesIds = buildingDto.getFacultiesIds();
+		this.administrativeNumbers = buildingDto.getAdministrativeNumbers();
 	}
 }

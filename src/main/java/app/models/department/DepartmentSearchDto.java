@@ -10,10 +10,9 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class DepartmentDto {
+public class DepartmentSearchDto {
 	private long id;
 	private String name;
 	private Tag tag;
 	private String description;
-	private long facultyId;
 }

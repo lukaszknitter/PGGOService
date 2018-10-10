@@ -6,10 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
@@ -20,6 +17,10 @@ public class Building extends BaseEntity {
 
 	@Column(columnDefinition = "longblob")
 	public String picture;
+
+	@Convert(converter = AdministrativeNumbersConverter.class)
+	@Column(columnDefinition = "text")
+	public List<Integer> administrativeNumbers;
 
 	@Column(columnDefinition = "text")
 	public String description;

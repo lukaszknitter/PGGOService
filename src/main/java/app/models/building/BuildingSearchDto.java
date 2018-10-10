@@ -1,4 +1,4 @@
-package app.models.department;
+package app.models.building;
 
 import app.models.Tag;
 import lombok.AllArgsConstructor;
@@ -10,10 +10,9 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class DepartmentDto {
+public class BuildingSearchDto {
+	public String description;
 	private long id;
 	private String name;
 	private Tag tag;
-	private String description;
-	private long facultyId;
 }

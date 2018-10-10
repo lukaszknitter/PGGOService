@@ -30,8 +30,8 @@ public class DepartmentController {
 	}
 
 	@GetMapping
-	public ArrayList<DepartmentDto> getDepartment() {
-		return service.getDepartments();
+	public ArrayList<DepartmentSearchDto> getDepartment(@RequestParam(value = "name", required = false) String name) {
+		return service.getDepartments(name);
 	}
 
 	@PutMapping("/{id}")

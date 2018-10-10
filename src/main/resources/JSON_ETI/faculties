@@ -1,7 +1,7 @@
 [
 {
   "id": 10001,
-  "tag": "NETI",
+  "tag": ETI,
   "name": "Elektroniki, Telekomunikacji i Informatyki",
     "departmentsIds":[
       "10001",
@@ -10,7 +10,7 @@
 },
 {
   "id": 10002,
-  "tag":"NETI",
+  "tag": ETI,
   "name":"Moze jakis inny wydzial, kto wie",
   "departmentsIds":[
     "10003"

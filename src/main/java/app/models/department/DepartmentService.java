@@ -2,6 +2,7 @@ package app.models.department;
 
 import app.exception.ConflictException;
 import app.exception.ResourceNotFoundException;
+import app.models.SearchSpecifications;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
@@ -20,7 +21,7 @@ public class DepartmentService {
 
 	private final ModelMapper mapper;
 	private final DepartmentRepository repository;
-
+	private final SearchSpecifications searchSpecifications;
 
 	public DepartmentDto createDepartment(DepartmentDto dto) {
 		Optional<Department> departmentWithSameName = repository.findFirstByName(dto.getName());
@@ -37,8 +38,8 @@ public class DepartmentService {
 		return mapper.map(department, DepartmentDto.class);
 	}
 
-	public ArrayList<DepartmentDto> getDepartments() {
-		ArrayList<Department> result = new ArrayList<>(repository.findAll());
+	public ArrayList<DepartmentSearchDto> getDepartments(String name) {
+		List result = repository.findAll(searchSpecifications.nameContains(name));
 		Type listType = new TypeToken<List<DepartmentDto>>() {
 		}.getType();
 		return mapper.map(result, listType);

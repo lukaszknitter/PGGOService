@@ -1,5 +1,6 @@
 package app.models.faculty;
 
+import app.models.Tag;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,7 +15,7 @@ import java.util.List;
 public class FacultyCreationDto {
 	private long id;
 	private String name;
-	private String tag;
+	private Tag tag;
 	private List<Long> departmentsIds;
 
 	public FacultyCreationDto(FacultyCreationDto facultyDto) {

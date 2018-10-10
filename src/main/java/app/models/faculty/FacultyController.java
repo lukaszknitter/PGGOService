@@ -30,8 +30,8 @@ public class FacultyController {
 	}
 
 	@GetMapping
-	public ArrayList<FacultyDto> getFaculties() {
-		return service.getFaculties();
+	public ArrayList<FacultySearchDto> getFaculties(@RequestParam(value = "name", required = false) String name) {
+		return service.getFaculties(name);
 	}
 
 	@PutMapping("/{id}")
