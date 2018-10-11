@@ -86,8 +86,7 @@ public class ModelMapperConfig {
 
 		mapper.createTypeMap(Building.class, BuildingDto.class)
 				.addMappings(expr -> expr.using(getFacultiesIds).map(Building::getFaculties, BuildingDto::setFacultiesIds))
-				.addMappings(expr -> expr.using(getFacultiesNames).map(Building::getFaculties, BuildingDto::setFacultiesNames))
-				.addMappings(expr -> expr.using(getPicture).map(Building::getPicture, BuildingDto::setPicture));
+				.addMappings(expr -> expr.using(getFacultiesNames).map(Building::getFaculties, BuildingDto::setFacultiesNames));
 	}
 
 	private void configureFacultyToFacultyDtoMapping(ModelMapper mapper) {
