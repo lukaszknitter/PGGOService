@@ -1,24 +1,26 @@
 [
 {
-  "id":10001,
+  "id":10000,
   "tag": ETI,
-  "administrativeNumbers":[
-    "123",
-    "22"
-  ],
-  "name":"Budynek Nowego ETI",
+    "numbers": [
+      42
+    ],
+  "name":"Budynek B Wydziału ETI",
   "picture":"eti_building.PNG",
-  "description":"To jest opis nowego ETI",
+  "description":"To jest opis",
   "facultiesIds":[
-    "10001",
-    "10002"
   ]
 },
 {
-  "id": 10002,
+  "id": 10001,
   "tag": ETI,
-  "name": "Budynek Starego ETI",
+   "numbers": [
+     41
+   ],
+  "name": "Budynek A Wydziału ETI",
   "picture": "stare_building.PNG",
-  "description": "To jest opis starego ETI"
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
 }
 ]

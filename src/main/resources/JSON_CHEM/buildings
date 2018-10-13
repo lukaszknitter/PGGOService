@@ -1,0 +1,50 @@
+[
+{
+  "id":10011,
+  "tag": CHEM,
+    "numbers": [
+      13
+    ],
+  "name":"Inżynieria Chemiczna",
+  "picture":"",
+  "description":"To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10022,
+  "tag": CHEM,
+   "numbers": [
+     6
+   ],
+  "name": "Budynek A Wydziału Chemicznego",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10023,
+  "tag": CHEM,
+   "numbers": [
+     7
+   ],
+  "name": "Budynek B Wydziału Chemicznego",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10026,
+  "tag": CHEM,
+   "numbers": [
+     5
+   ],
+  "name": "Budynek C Wydziału Chemicznego",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+}
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "id": 10002,
+    "tag": "OIO",
+    "name": "Budynek Wydziału Oceanotechniki",
+    "coordinates": [
+      {
+        "longitude": 18.6128770,
+        "latitude": 54.3731222
+      },
+      {
+        "longitude": 18.6127422,
+        "latitude": 54.3729824
+      },
+      {
+        "longitude": 18.6126966,
+        "latitude": 54.3728945
+      },
+      {
+        "longitude": 18.6127388,
+        "latitude": 54.3728874
+      },
+      {
+        "longitude": 18.6127067,
+        "latitude": 54.3728304
+      },
+      {
+        "longitude": 18.6127281,
+        "latitude": 54.3728273
+      },
+      {
+        "longitude": 18.6125591,
+        "latitude": 54.3725230
+      },
+      {
+        "longitude": 18.6125316,
+        "latitude": 54.3725254
+      },
+      {
+        "longitude": 18.6124572,
+        "latitude": 54.3723922
+      },
+      {
+        "longitude": 18.6125511,
+        "latitude": 54.3723758
+      },
+      {
+        "longitude": 18.6124438,
+        "latitude": 54.3721578
+      },
+      {
+        "longitude": 18.6125216,
+        "latitude": 54.3721430
+      },
+      {
+        "longitude": 18.6125612,
+        "latitude": 54.3722043
+      },
+      {
+        "longitude": 18.6130963,
+        "latitude": 54.3721055
+      },
+      {
+        "longitude": 18.6134557,
+        "latitude": 54.3727531
+      },
+      {
+        "longitude": 18.6134979,
+        "latitude": 54.3727453
+      },
+      {
+        "longitude": 18.6135442,
+        "latitude": 54.3728335
+      },
+      {
+        "longitude": 18.6135784,
+        "latitude": 54.3729949
+      },
+      {
+        "longitude": 18.6134101,
+        "latitude": 54.3730253
+      },
+      {
+        "longitude": 18.6132706,
+        "latitude": 54.3728835
+      },
+      {
+        "longitude": 18.6130158,
+        "latitude": 54.3729324
+      },
+      {
+        "longitude": 18.6130486,
+        "latitude": 54.3730913
+      },
+      {
+        "longitude": 18.6128770,
+        "latitude": 54.3731222
+      }
+    ]
+  }
+]

@@ -1,0 +1,161 @@
+[
+{
+  "id":10004,
+  "tag": OTHER,
+    "numbers": [
+      19
+    ],
+  "name":"Pawilon Działu Eksploatacji",
+  "picture":"",
+  "description":"To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10005,
+  "tag": OTHER,
+   "numbers": [
+     23
+   ],
+  "name": "Bratniak",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10012,
+  "tag": OTHER,
+   "numbers": [
+     14
+   ],
+  "name": "Misiówka",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10015,
+  "tag": OTHER,
+   "numbers": [
+     17
+   ],
+  "name": "Audytorium Novum",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},,
+{
+  "id": 10020,
+  "tag": OTHER,
+   "numbers": [
+     2
+   ],
+  "name": "Dział Promocji",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10021,
+  "tag": OTHER,
+   "numbers": [
+     3
+   ],
+  "name": "Portiernia Główna",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10025,
+  "tag": OTHER,
+   "numbers": [
+     8
+   ],
+  "name": "Magazyn Odpadów i Odczynników Chemicznych",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10027,
+  "tag": OTHER,
+   "numbers": [
+     29
+   ],
+  "name": "Zespół Opieki Zdrowotnej",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10028,
+  "tag": OTHER,
+   "numbers": [
+     27
+   ],
+  "name": "Budynek Centrum Wiedzy i Przedsiębiorczości",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10029,
+  "tag": OTHER,
+   "numbers": [
+     25
+   ],
+  "name": "Budynek 25",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10031,
+  "tag": OTHER,
+   "numbers": [
+     65
+   ],
+  "name": "Centrum Obsługi Technicznej",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10048,
+  "tag": OTHER,
+   "numbers": [
+      80,
+      81,
+      82,
+      83
+   ],
+  "name": "Budynki Działu Gospodarczego",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10049,
+  "tag": OTHER,
+   "numbers": [
+     116
+   ],
+  "name": "Budynek Działu Gospodarczego Wirtualna Polska",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+}
+]

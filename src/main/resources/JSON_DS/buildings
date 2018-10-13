@@ -1,0 +1,158 @@
+[
+{
+  "id":10035,
+  "tag": DS,
+    "numbers": [
+      111
+    ],
+  "name":"Dom Studencki 13",
+  "picture":"",
+  "description":"To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10036,
+  "tag": DS,
+   "numbers": [
+     110
+   ],
+  "name": "Dom Studencki 3",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10037,
+  "tag": DS,
+   "numbers": [
+     112
+   ],
+  "name": "Dom Studencki 4",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10038,
+  "tag": DS,
+   "numbers": [
+     115
+   ],
+  "name": "Dom Studencki 2",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10039,
+  "tag": DS,
+   "numbers": [
+     114
+   ],
+  "name": "Dom Studencki 1",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10040,
+  "tag": DS,
+   "numbers": [
+     113
+   ],
+  "name": "Dom Studencki 12",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10041,
+  "tag": DS,
+   "numbers": [
+     120
+   ],
+  "name": "Dom Studencki 6",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10042,
+  "tag": DS,
+   "numbers": [
+     121
+   ],
+  "name": "Dom Studencki 5",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10043,
+  "tag": DS,
+   "numbers": [
+     122
+   ],
+  "name": "Dom Studencki 10",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10044,
+  "tag": DS,
+   "numbers": [
+     123
+   ],
+  "name": "Dom Studencki 7",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10045,
+  "tag": DS,
+   "numbers": [
+     124
+   ],
+  "name": "Dom Studencki 8",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10046,
+  "tag": DS,
+   "numbers": [
+     125
+   ],
+  "name": "Dom Studencki 9",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10047,
+  "tag": DS,
+   "numbers": [
+     126
+   ],
+  "name": "Dom Studencki 11",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+}
+]

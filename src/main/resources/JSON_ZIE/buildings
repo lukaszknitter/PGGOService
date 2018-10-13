@@ -1,0 +1,14 @@
+[
+{
+  "id":10009,
+  "tag": ZIE,
+    "numbers": [
+      50
+    ],
+  "name":"Budynek Wydziału Zarządzania i Ekonomii",
+  "picture":"",
+  "description":"To jest opis",
+  "facultiesIds":[
+  ]
+}
+]

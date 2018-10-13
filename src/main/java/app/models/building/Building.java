@@ -20,7 +20,7 @@ public class Building extends BaseEntity {
 
 	@Convert(converter = AdministrativeNumbersConverter.class)
 	@Column(columnDefinition = "text")
-	private List<Integer> administrativeNumbers;
+	private List<Integer> numbers;
 
 	@Column(columnDefinition = "text")
 	private String description;

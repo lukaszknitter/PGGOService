@@ -1,0 +1,81 @@
+[
+  {
+    "id": 10009,
+    "tag": "ZIE",
+    "name": "Budynek Wydziału Zarządzania i Ekonomii",
+    "coordinates": [
+      {
+        "longitude": 18.6163652,
+        "latitude": 54.3702922
+      },
+      {
+        "longitude": 18.6163692,
+        "latitude": 54.3702820
+      },
+      {
+        "longitude": 18.6163390,
+        "latitude": 54.3702727
+      },
+      {
+        "longitude": 18.6163243,
+        "latitude": 54.3702000
+      },
+      {
+        "longitude": 18.6163531,
+        "latitude": 54.3701863
+      },
+      {
+        "longitude": 18.6163411,
+        "latitude": 54.3701801
+      },
+      {
+        "longitude": 18.6163209,
+        "latitude": 54.3699820
+      },
+      {
+        "longitude": 18.6164021,
+        "latitude": 54.3699449
+      },
+      {
+        "longitude": 18.6164175,
+        "latitude": 54.3699641
+      },
+      {
+        "longitude": 18.6164926,
+        "latitude": 54.3699293
+      },
+      {
+        "longitude": 18.6167984,
+        "latitude": 54.3699809
+      },
+      {
+        "longitude": 18.6168728,
+        "latitude": 54.3703086
+      },
+      {
+        "longitude": 18.6168500,
+        "latitude": 54.3703129
+      },
+      {
+        "longitude": 18.6168560,
+        "latitude": 54.3703309
+      },
+      {
+        "longitude": 18.6167575,
+        "latitude": 54.3703738
+      },
+      {
+        "longitude": 18.6167300,
+        "latitude": 54.3703656
+      },
+      {
+        "longitude": 18.6167179,
+        "latitude": 54.3703766
+      },
+      {
+        "longitude": 18.6163652,
+        "latitude": 54.3702922
+      }
+    ]
+  }
+]

@@ -1,50 +1,247 @@
 [
-{
-  "id": 10001,
-  "tag": "MECH",
-  "name": "Mechaniczny",
-  "buildingId": 1,
-  "coordinates": [
-    {
-      "longitude": 18.614763,
-      "latitude": 54.372192
-    },
-    {
-      "longitude": 18.615242,
-      "latitude": 54.372119
-    },
-    {
-      "longitude": 18.614664,
-      "latitude": 54.371031
-    },
-    {
-      "longitude": 18.614184,
-      "latitude": 54.371120
-    }
-  ]
-},
-{
-  "id": 10002,
-  "tag": "MECH",
-  "name": "Mechaniczny 2",
-  "buildingId": 2,
-  "coordinates": [
-    {
-      "longitude": 18.614055,
-      "latitude": 54.372348
-    },
-    {
-      "longitude": 18.613744,
-      "latitude": 54.371826
-    },
-    {
-      "longitude": 18.614168,
-      "latitude": 54.371752
-    },
-    {
-      "longitude": 18.614468,
-      "latitude": 54.372250
-    }
-  ]
-}
+  {
+    "id": 10003,
+    "tag": "MECH",
+    "name": "Budynek Wydziału Mechanicznego",
+    "coordinates": [
+      {
+        "longitude": 18.6147720,
+        "latitude": 54.3722160
+      },
+      {
+        "longitude": 18.6145420,
+        "latitude": 54.3717937
+      },
+      {
+        "longitude": 18.6145674,
+        "latitude": 54.3717883
+      },
+      {
+        "longitude": 18.6144239,
+        "latitude": 54.3715289
+      },
+      {
+        "longitude": 18.6143991,
+        "latitude": 54.3715313
+      },
+      {
+        "longitude": 18.6141651,
+        "latitude": 54.3711086
+      },
+      {
+        "longitude": 18.6146660,
+        "latitude": 54.3710199
+      },
+      {
+        "longitude": 18.6151595,
+        "latitude": 54.3719234
+      },
+      {
+        "longitude": 18.6151756,
+        "latitude": 54.3719223
+      },
+      {
+        "longitude": 18.6152970,
+        "latitude": 54.3721461
+      },
+      {
+        "longitude": 18.6150697,
+        "latitude": 54.3721879
+      },
+      {
+        "longitude": 18.6150529,
+        "latitude": 54.3721539
+      },
+      {
+        "longitude": 18.6149906,
+        "latitude": 54.3721664
+      },
+      {
+        "longitude": 18.6149966,
+        "latitude": 54.3721765
+      },
+      {
+        "longitude": 18.6147720,
+        "latitude": 54.3722160
+      }
+    ]
+  },
+  {
+    "id": 10016,
+    "tag": "MECH",
+    "name": "Laboratorium Maszynowe",
+    "coordinates": [
+      {
+        "longitude": 18.6165241,
+        "latitude": 54.3727293
+      },
+      {
+        "longitude": 18.6166247,
+        "latitude": 54.3727148
+      },
+      {
+        "longitude": 18.6166220,
+        "latitude": 54.3727058
+      },
+      {
+        "longitude": 18.6167897,
+        "latitude": 54.3726492
+      },
+      {
+        "longitude": 18.6167762,
+        "latitude": 54.3726308
+      },
+      {
+        "longitude": 18.6169311,
+        "latitude": 54.3725769
+      },
+      {
+        "longitude": 18.6167682,
+        "latitude": 54.3724117
+      },
+      {
+        "longitude": 18.6168990,
+        "latitude": 54.3723629
+      },
+      {
+        "longitude": 18.6167025,
+        "latitude": 54.3721660
+      },
+      {
+        "longitude": 18.6170545,
+        "latitude": 54.3720418
+      },
+      {
+        "longitude": 18.6174931,
+        "latitude": 54.3724820
+      },
+      {
+        "longitude": 18.6172362,
+        "latitude": 54.3725750
+      },
+      {
+        "longitude": 18.6172664,
+        "latitude": 54.3726101
+      },
+      {
+        "longitude": 18.6172543,
+        "latitude": 54.3726293
+      },
+      {
+        "longitude": 18.6172336,
+        "latitude": 54.3726390
+      },
+      {
+        "longitude": 18.6171994,
+        "latitude": 54.3726461
+      },
+      {
+        "longitude": 18.6171564,
+        "latitude": 54.3726418
+      },
+      {
+        "longitude": 18.6171229,
+        "latitude": 54.3726039
+      },
+      {
+        "longitude": 18.6166703,
+        "latitude": 54.3727562
+      },
+      {
+        "longitude": 18.6166696,
+        "latitude": 54.3727636
+      },
+      {
+        "longitude": 18.6165509,
+        "latitude": 54.3727781
+      },
+      {
+        "longitude": 18.6165241,
+        "latitude": 54.3727293
+      }
+    ]
+  },
+  {
+    "id": 10018,
+    "tag": "MECH",
+    "name": "Hydromechanika",
+    "coordinates": [
+      {
+        "longitude": 18.6176285,
+        "latitude": 54.3713055
+      },
+      {
+        "longitude": 18.6177626,
+        "latitude": 54.3712602
+      },
+      {
+        "longitude": 18.6180932,
+        "latitude": 54.3715910
+      },
+      {
+        "longitude": 18.6181475,
+        "latitude": 54.3715742
+      },
+      {
+        "longitude": 18.6186250,
+        "latitude": 54.3720457
+      },
+      {
+        "longitude": 18.6185525,
+        "latitude": 54.3720707
+      },
+      {
+        "longitude": 18.6185700,
+        "latitude": 54.3720894
+      },
+      {
+        "longitude": 18.6184754,
+        "latitude": 54.3721215
+      },
+      {
+        "longitude": 18.6184546,
+        "latitude": 54.3721027
+      },
+      {
+        "longitude": 18.6183909,
+        "latitude": 54.3721262
+      },
+      {
+        "longitude": 18.6182494,
+        "latitude": 54.3719848
+      },
+      {
+        "longitude": 18.6182964,
+        "latitude": 54.3719695
+      },
+      {
+        "longitude": 18.6182414,
+        "latitude": 54.3719129
+      },
+      {
+        "longitude": 18.6182582,
+        "latitude": 54.3719055
+      },
+      {
+        "longitude": 18.6180476,
+        "latitude": 54.3716969
+      },
+      {
+        "longitude": 18.6179933,
+        "latitude": 54.3717133
+      },
+      {
+        "longitude": 18.6179048,
+        "latitude": 54.3716184
+      },
+      {
+        "longitude": 18.6179336,
+        "latitude": 54.3716090
+      },
+      {
+        "longitude": 18.6176285,
+        "latitude": 54.3713055
+      }
+    ]
+  }
 ]
