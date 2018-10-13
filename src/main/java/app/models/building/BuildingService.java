@@ -10,6 +10,7 @@ import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +30,7 @@ public class BuildingService {
 	private final ModelMapper mapper;
 	private final BuildingRepository buildingRepository;
 	private final SearchSpecifications searchSpecifications;
+	private final PictureService pictureService;
 
 	public static <T> Predicate<T> distinctByKey(Function<? super T, ?> keyExtractor) {
 		Set<Object> seen = ConcurrentHashMap.newKeySet();
@@ -52,6 +54,16 @@ public class BuildingService {
 				.collect(Collectors.toList());
 		building.setFaculties(faculties);
 		return mapper.map(building, BuildingDto.class);
+	}
+
+	public String getBuildingPicture(long id) {
+		Building building = buildingRepository.findById(id).orElseThrow(buildingNotFoundException(id));
+		try {
+			return pictureService.getPicture(building.getPicture());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 	public ArrayList<BuildingSearchDto> getBuildings(String name) {

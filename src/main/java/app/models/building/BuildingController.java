@@ -23,6 +23,11 @@ public class BuildingController {
 		return this.service.getBuilding(id);
 	}
 
+	@GetMapping("/picture/{id}")
+	public String getBuildingPicture(@PathVariable long id) {
+		return this.service.getBuildingPicture(id);
+	}
+
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
 	public BuildingDto createBuilding(@RequestBody @Valid BuildingCreationDto dto) {

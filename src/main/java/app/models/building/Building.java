@@ -16,14 +16,14 @@ import java.util.List;
 public class Building extends BaseEntity {
 
 	@Column(columnDefinition = "longblob")
-	public String picture;
+	private String picture;
 
 	@Convert(converter = AdministrativeNumbersConverter.class)
 	@Column(columnDefinition = "text")
-	public List<Integer> administrativeNumbers;
+	private List<Integer> administrativeNumbers;
 
 	@Column(columnDefinition = "text")
-	public String description;
+	private String description;
 
 	@ManyToMany(fetch = FetchType.EAGER)
 	private List<Faculty> faculties;

@@ -38,7 +38,7 @@ public class DepartmentService {
 		return mapper.map(department, DepartmentDto.class);
 	}
 
-	public ArrayList<DepartmentSearchDto> getDepartments(String name) {
+	public ArrayList<DepartmentDto> getDepartments(String name) {
 		List result = repository.findAll(searchSpecifications.nameContains(name));
 		Type listType = new TypeToken<List<DepartmentDto>>() {
 		}.getType();

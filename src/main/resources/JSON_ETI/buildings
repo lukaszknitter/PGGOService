@@ -2,6 +2,10 @@
 {
   "id":10001,
   "tag": ETI,
+  "administrativeNumbers":[
+    "123",
+    "22"
+  ],
   "name":"Budynek Nowego ETI",
   "picture":"eti_building.PNG",
   "description":"To jest opis nowego ETI",
