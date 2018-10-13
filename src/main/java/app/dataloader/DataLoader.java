@@ -86,7 +86,7 @@ public class DataLoader {
 					faculties = gson.fromJson(readDataFromFile(file), facultyListType);
 					break;
 				default:
-					System.out.println("Unexpected file: " + file.getName());
+					System.out.println("Loaded picture: " + file.getName());
 					break;
 			}
 		}
