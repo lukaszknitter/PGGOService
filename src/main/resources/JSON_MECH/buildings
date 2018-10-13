@@ -1,20 +1,38 @@
 [
 {
-  "id":10001,
-  "tag":"MECH",
+  "id":10003,
+  "tag": MECH,
+    "numbers": [
+      40
+    ],
   "name":"Budynek Wydziału Mechanicznego",
-  "picture":"mech_building.JPG",
-  "description":"To jest opis mechanicznego",
+  "picture":"mechaniczny_building.png",
+  "description":"To jest opis",
   "facultiesIds":[
-    "10001",
-    "10002"
   ]
 },
 {
-  "id":10002,
-  "tag":"MECH",
-  "name":"Inny Budynek Wydziału Mechanicznego",
-  "picture":"mechaniczny_building.png",
-  "description":"To jest opis mechanicznego"
+  "id": 10016,
+  "tag": MECH,
+   "numbers": [
+     15
+   ],
+  "name": "Laboratorium Maszynowe",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10018,
+  "tag": MECH,
+   "numbers": [
+     11
+   ],
+  "name": "Hydromechanika",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
 }
 ]

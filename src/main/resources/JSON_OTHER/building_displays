@@ -1,0 +1,625 @@
+[
+  {
+    "id": 10004,
+    "tag": "OTHER",
+    "name": "Pawilon Działu Eksploatacji",
+    "coordinates": [
+      {
+        "longitude": 18.6154351,
+        "latitude": 54.3718426
+      },
+      {
+        "longitude": 18.6150972,
+        "latitude": 54.3712180
+      },
+      {
+        "longitude": 18.6152420,
+        "latitude": 54.3711914
+      },
+      {
+        "longitude": 18.6155827,
+        "latitude": 54.3718156
+      },
+      {
+        "longitude": 18.6154351,
+        "latitude": 54.3718426
+      }
+    ]
+  },
+  {
+    "id": 10005,
+    "buildingId": 11111,
+    "number": [
+      23
+    ],
+    "tag": "OTHER",
+    "name": "Bratniak",
+    "coordinates": [
+      {
+        "longitude": 18.6151072,
+        "latitude": 54.3708942
+      },
+      {
+        "longitude": 18.6150174,
+        "latitude": 54.3707039
+      },
+      {
+        "longitude": 18.6156363,
+        "latitude": 54.3706055
+      },
+      {
+        "longitude": 18.6157241,
+        "latitude": 54.3707961
+      },
+      {
+        "longitude": 18.6156504,
+        "latitude": 54.3708074
+      },
+      {
+        "longitude": 18.6156665,
+        "latitude": 54.3708410
+      },
+      {
+        "longitude": 18.6152018,
+        "latitude": 54.3709149
+      },
+      {
+        "longitude": 18.6151844,
+        "latitude": 54.3708824
+      },
+      {
+        "longitude": 18.6151072,
+        "latitude": 54.3708942
+      }
+    ]
+  },
+  {
+    "id": 10012,
+    "tag": "OTHER",
+    "name": "Misiówka",
+    "coordinates": [
+      {
+        "longitude": 18.6169177,
+        "latitude": 54.3718180
+      },
+      {
+        "longitude": 18.6167977,
+        "latitude": 54.3717074
+      },
+      {
+        "longitude": 18.6169298,
+        "latitude": 54.3716559
+      },
+      {
+        "longitude": 18.6170559,
+        "latitude": 54.3717645
+      },
+      {
+        "longitude": 18.6169177,
+        "latitude": 54.3718180
+      }
+    ]
+  },
+  {
+    "id": 10015,
+    "tag": "OTHER",
+    "name": "Audytorium Novum",
+    "coordinates": [
+      {
+        "longitude": 18.6162244,
+        "latitude": 54.3729097
+      },
+      {
+        "longitude": 18.6160862,
+        "latitude": 54.3726632
+      },
+      {
+        "longitude": 18.6164470,
+        "latitude": 54.3725972
+      },
+      {
+        "longitude": 18.6164564,
+        "latitude": 54.3726101
+      },
+      {
+        "longitude": 18.6164980,
+        "latitude": 54.3726015
+      },
+      {
+        "longitude": 18.6165295,
+        "latitude": 54.3726093
+      },
+      {
+        "longitude": 18.6165536,
+        "latitude": 54.3726632
+      },
+      {
+        "longitude": 18.6165422,
+        "latitude": 54.3726742
+      },
+      {
+        "longitude": 18.6165590,
+        "latitude": 54.3727242
+      },
+      {
+        "longitude": 18.6165241,
+        "latitude": 54.3727293
+      },
+      {
+        "longitude": 18.6165851,
+        "latitude": 54.3728425
+      },
+      {
+        "longitude": 18.6162244,
+        "latitude": 54.3729097
+      }
+    ]
+  },
+  {
+    "id": 10020,
+    "tag": "OTHER",
+    "name": "Dział Promocji",
+    "coordinates": [
+      {
+        "longitude": 18.6195865,
+        "latitude": 54.3722109
+      },
+      {
+        "longitude": 18.6194833,
+        "latitude": 54.3721133
+      },
+      {
+        "longitude": 18.6195892,
+        "latitude": 54.3720773
+      },
+      {
+        "longitude": 18.6196589,
+        "latitude": 54.3721476
+      },
+      {
+        "longitude": 18.6196187,
+        "latitude": 54.3721597
+      },
+      {
+        "longitude": 18.6196522,
+        "latitude": 54.3721894
+      },
+      {
+        "longitude": 18.6195865,
+        "latitude": 54.3722109
+      }
+    ]
+  },
+  {
+    "id": 10021,
+    "tag": "OTHER",
+    "name": "Portiernia Główna",
+    "coordinates": [
+      {
+        "longitude": 18.6198648,
+        "latitude": 54.3720765
+      },
+      {
+        "longitude": 18.6197957,
+        "latitude": 54.3720078
+      },
+      {
+        "longitude": 18.6198997,
+        "latitude": 54.3719719
+      },
+      {
+        "longitude": 18.6199976,
+        "latitude": 54.3720711
+      },
+      {
+        "longitude": 18.6198977,
+        "latitude": 54.3721031
+      },
+      {
+        "longitude": 18.6198735,
+        "latitude": 54.3720734
+      },
+      {
+        "longitude": 18.6198648,
+        "latitude": 54.3720765
+      }
+    ]
+  },
+  {
+    "id": 10025,
+    "tag": "OTHER",
+    "name": "Magazyn Odpadów i Odczynników Chemicznych",
+    "coordinates": [
+      {
+        "longitude": 18.6210430,
+        "latitude": 54.3704137
+      },
+      {
+        "longitude": 18.6213521,
+        "latitude": 54.3703047
+      },
+      {
+        "longitude": 18.6214426,
+        "latitude": 54.3703945
+      },
+      {
+        "longitude": 18.6211322,
+        "latitude": 54.3705024
+      },
+      {
+        "longitude": 18.6210430,
+        "latitude": 54.3704137
+      }
+    ]
+  },
+  {
+    "id": 10027,
+    "tag": "OTHER",
+    "name": "Zespół Opieki Zdrowotnej",
+    "coordinates": [
+      {
+        "longitude": 18.6227489,
+        "latitude": 54.3701164
+      },
+      {
+        "longitude": 18.6230727,
+        "latitude": 54.3700024
+      },
+      {
+        "longitude": 18.6231780,
+        "latitude": 54.3701031
+      },
+      {
+        "longitude": 18.6230962,
+        "latitude": 54.3701328
+      },
+      {
+        "longitude": 18.6233584,
+        "latitude": 54.3703914
+      },
+      {
+        "longitude": 18.6236823,
+        "latitude": 54.3702785
+      },
+      {
+        "longitude": 18.6239974,
+        "latitude": 54.3705707
+      },
+      {
+        "longitude": 18.6234248,
+        "latitude": 54.3707723
+      },
+      {
+        "longitude": 18.6231183,
+        "latitude": 54.3704742
+      },
+      {
+        "longitude": 18.6232042,
+        "latitude": 54.3704449
+      },
+      {
+        "longitude": 18.6229400,
+        "latitude": 54.3701887
+      },
+      {
+        "longitude": 18.6229212,
+        "latitude": 54.3701942
+      },
+      {
+        "longitude": 18.6229520,
+        "latitude": 54.3702223
+      },
+      {
+        "longitude": 18.6228810,
+        "latitude": 54.3702465
+      },
+      {
+        "longitude": 18.6227489,
+        "latitude": 54.3701164
+      }
+    ]
+  },
+  {
+    "id": 10028,
+    "tag": "OTHER",
+    "name": "Budynek Centrum Wiedzy i Przedsiębiorczości",
+    "coordinates": [
+      {
+        "longitude": 18.6207312,
+        "latitude": 54.3737315
+      },
+      {
+        "longitude": 18.6206681,
+        "latitude": 54.3736948
+      },
+      {
+        "longitude": 18.6207104,
+        "latitude": 54.3736710
+      },
+      {
+        "longitude": 18.6206654,
+        "latitude": 54.3736460
+      },
+      {
+        "longitude": 18.6208170,
+        "latitude": 54.3735569
+      },
+      {
+        "longitude": 18.6209176,
+        "latitude": 54.3736124
+      },
+      {
+        "longitude": 18.6208968,
+        "latitude": 54.3736253
+      },
+      {
+        "longitude": 18.6209417,
+        "latitude": 54.3736507
+      },
+      {
+        "longitude": 18.6208887,
+        "latitude": 54.3736815
+      },
+      {
+        "longitude": 18.6208968,
+        "latitude": 54.3736874
+      },
+      {
+        "longitude": 18.6208177,
+        "latitude": 54.3737331
+      },
+      {
+        "longitude": 18.6207721,
+        "latitude": 54.3737073
+      },
+      {
+        "longitude": 18.6207312,
+        "latitude": 54.3737315
+      }
+    ]
+  },
+  {
+    "id": 10029,
+    "tag": "OTHER",
+    "name": "Budynek 25",
+    "coordinates": [
+      {
+        "longitude": 18.6196804,
+        "latitude": 54.3743135
+      },
+      {
+        "longitude": 18.6195765,
+        "latitude": 54.3741897
+      },
+      {
+        "longitude": 18.6196623,
+        "latitude": 54.3741624
+      },
+      {
+        "longitude": 18.6196838,
+        "latitude": 54.3741916
+      },
+      {
+        "longitude": 18.6198936,
+        "latitude": 54.3741038
+      },
+      {
+        "longitude": 18.6199359,
+        "latitude": 54.3741377
+      },
+      {
+        "longitude": 18.6199728,
+        "latitude": 54.3741221
+      },
+      {
+        "longitude": 18.6200271,
+        "latitude": 54.3741647
+      },
+      {
+        "longitude": 18.6199902,
+        "latitude": 54.3741799
+      },
+      {
+        "longitude": 18.6200432,
+        "latitude": 54.3742229
+      },
+      {
+        "longitude": 18.6199674,
+        "latitude": 54.3742553
+      },
+      {
+        "longitude": 18.6199808,
+        "latitude": 54.3742772
+      },
+      {
+        "longitude": 18.6198065,
+        "latitude": 54.3743518
+      },
+      {
+        "longitude": 18.6197582,
+        "latitude": 54.3742901
+      },
+      {
+        "longitude": 18.6196804,
+        "latitude": 54.3743135
+      }
+    ]
+  },
+  {
+    "id": 10031,
+    "tag": "OTHER",
+    "name": "Centrum Obsługi Technicznej",
+    "coordinates": [
+      {
+        "longitude": 18.6119758,
+        "latitude": 54.3699336
+      },
+      {
+        "longitude": 18.6119315,
+        "latitude": 54.3697375
+      },
+      {
+        "longitude": 18.6124760,
+        "latitude": 54.3696953
+      },
+      {
+        "longitude": 18.6125189,
+        "latitude": 54.3698914
+      },
+      {
+        "longitude": 18.6119758,
+        "latitude": 54.3699336
+      }
+    ]
+  },
+  {
+    "id": 10048,
+    "tag": "OTHER",
+    "name": "Budynki Działu Gospodarczego",
+    "coordinates": [
+      {
+        "longitude": 18.6111248,
+        "latitude": 54.3691387
+      },
+      {
+        "longitude": 18.6110947,
+        "latitude": 54.3686707
+      },
+      {
+        "longitude": 18.6109927,
+        "latitude": 54.3686726
+      },
+      {
+        "longitude": 18.6109907,
+        "latitude": 54.3686133
+      },
+      {
+        "longitude": 18.6110276,
+        "latitude": 54.3686105
+      },
+      {
+        "longitude": 18.6110222,
+        "latitude": 54.3685144
+      },
+      {
+        "longitude": 18.6109746,
+        "latitude": 54.3685160
+      },
+      {
+        "longitude": 18.6109713,
+        "latitude": 54.3684550
+      },
+      {
+        "longitude": 18.6109880,
+        "latitude": 54.3684531
+      },
+      {
+        "longitude": 18.6109780,
+        "latitude": 54.3683125
+      },
+      {
+        "longitude": 18.6111644,
+        "latitude": 54.3683082
+      },
+      {
+        "longitude": 18.6111738,
+        "latitude": 54.3684476
+      },
+      {
+        "longitude": 18.6115305,
+        "latitude": 54.3684414
+      },
+      {
+        "longitude": 18.6115292,
+        "latitude": 54.3684625
+      },
+      {
+        "longitude": 18.6115882,
+        "latitude": 54.3684617
+      },
+      {
+        "longitude": 18.6115942,
+        "latitude": 54.3685582
+      },
+      {
+        "longitude": 18.6115352,
+        "latitude": 54.3685605
+      },
+      {
+        "longitude": 18.6115493,
+        "latitude": 54.3687851
+      },
+      {
+        "longitude": 18.6111952,
+        "latitude": 54.3687910
+      },
+      {
+        "longitude": 18.6112160,
+        "latitude": 54.3691363
+      },
+      {
+        "longitude": 18.6111248,
+        "latitude": 54.3691387
+      }
+    ]
+  },
+  {
+    "id": 10049,
+    "tag": "OTHER",
+    "name": "Budynek Działu Gospodarczego Wirtualna Polska",
+    "coordinates": [
+      {
+        "longitude": 18.6078706,
+        "latitude": 54.3698211
+      },
+      {
+        "longitude": 18.6078807,
+        "latitude": 54.3694492
+      },
+      {
+        "longitude": 18.6080832,
+        "latitude": 54.3694500
+      },
+      {
+        "longitude": 18.6080825,
+        "latitude": 54.3694340
+      },
+      {
+        "longitude": 18.6082408,
+        "latitude": 54.3694348
+      },
+      {
+        "longitude": 18.6082415,
+        "latitude": 54.3694524
+      },
+      {
+        "longitude": 18.6084419,
+        "latitude": 54.3694535
+      },
+      {
+        "longitude": 18.6084312,
+        "latitude": 54.3698258
+      },
+      {
+        "longitude": 18.6083836,
+        "latitude": 54.3698250
+      },
+      {
+        "longitude": 18.6083836,
+        "latitude": 54.3698438
+      },
+      {
+        "longitude": 18.6082998,
+        "latitude": 54.3698434
+      },
+      {
+        "longitude": 18.6083005,
+        "latitude": 54.3698246
+      },
+      {
+        "longitude": 18.6078706,
+        "latitude": 54.3698211
+      }
+    ]
+  }
+]

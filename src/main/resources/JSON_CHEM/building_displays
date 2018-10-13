@@ -1,0 +1,270 @@
+[
+  {
+    "id": 10011,
+    "tag": "CHEM",
+    "name": "Inżynieria Chemiczna",
+    "coordinates": [
+      {
+        "longitude": 18.6172530,
+        "latitude": 54.3715785
+      },
+      {
+        "longitude": 18.6171424,
+        "latitude": 54.3714648
+      },
+      {
+        "longitude": 18.6174273,
+        "latitude": 54.3713805
+      },
+      {
+        "longitude": 18.6175373,
+        "latitude": 54.3714856
+      },
+      {
+        "longitude": 18.6172530,
+        "latitude": 54.3715785
+      }
+    ]
+  },
+  {
+    "id": 10022,
+    "tag": "CHEM",
+    "name": "Budynek A Wydziału Chemicznego",
+    "coordinates": [
+      {
+        "longitude": 18.6204884,
+        "latitude": 54.3713887
+      },
+      {
+        "longitude": 18.6204093,
+        "latitude": 54.3713117
+      },
+      {
+        "longitude": 18.6204549,
+        "latitude": 54.3712961
+      },
+      {
+        "longitude": 18.6202303,
+        "latitude": 54.3710711
+      },
+      {
+        "longitude": 18.6204053,
+        "latitude": 54.3710117
+      },
+      {
+        "longitude": 18.6206078,
+        "latitude": 54.3712141
+      },
+      {
+        "longitude": 18.6207157,
+        "latitude": 54.3711781
+      },
+      {
+        "longitude": 18.6206353,
+        "latitude": 54.3710949
+      },
+      {
+        "longitude": 18.6207848,
+        "latitude": 54.3710426
+      },
+      {
+        "longitude": 18.6208311,
+        "latitude": 54.3710887
+      },
+      {
+        "longitude": 18.6208599,
+        "latitude": 54.3710801
+      },
+      {
+        "longitude": 18.6208794,
+        "latitude": 54.3711012
+      },
+      {
+        "longitude": 18.6208586,
+        "latitude": 54.3711070
+      },
+      {
+        "longitude": 18.6208767,
+        "latitude": 54.3711242
+      },
+      {
+        "longitude": 18.6209873,
+        "latitude": 54.3710863
+      },
+      {
+        "longitude": 18.6206514,
+        "latitude": 54.3707535
+      },
+      {
+        "longitude": 18.6208291,
+        "latitude": 54.3706930
+      },
+      {
+        "longitude": 18.6211824,
+        "latitude": 54.3710473
+      },
+      {
+        "longitude": 18.6212307,
+        "latitude": 54.3710324
+      },
+      {
+        "longitude": 18.6213058,
+        "latitude": 54.3711098
+      },
+      {
+        "longitude": 18.6212589,
+        "latitude": 54.3711254
+      },
+      {
+        "longitude": 18.6212817,
+        "latitude": 54.3711524
+      },
+      {
+        "longitude": 18.6213394,
+        "latitude": 54.3711613
+      },
+      {
+        "longitude": 18.6214238,
+        "latitude": 54.3712426
+      },
+      {
+        "longitude": 18.6213843,
+        "latitude": 54.3712567
+      },
+      {
+        "longitude": 18.6214077,
+        "latitude": 54.3712817
+      },
+      {
+        "longitude": 18.6213125,
+        "latitude": 54.3713156
+      },
+      {
+        "longitude": 18.6212844,
+        "latitude": 54.3712899
+      },
+      {
+        "longitude": 18.6212475,
+        "latitude": 54.3713020
+      },
+      {
+        "longitude": 18.6211623,
+        "latitude": 54.3712192
+      },
+      {
+        "longitude": 18.6211771,
+        "latitude": 54.3711852
+      },
+      {
+        "longitude": 18.6211536,
+        "latitude": 54.3711613
+      },
+      {
+        "longitude": 18.6204884,
+        "latitude": 54.3713887
+      }
+    ]
+  },
+  {
+    "id": 10023,
+    "tag": "CHEM",
+    "name": "Budynek B Wydziału Chemicznego",
+    "coordinates": [
+      {
+        "longitude": 18.6200613,
+        "latitude": 54.3707012
+      },
+      {
+        "longitude": 18.6206996,
+        "latitude": 54.3704774
+      },
+      {
+        "longitude": 18.6207157,
+        "latitude": 54.3704914
+      },
+      {
+        "longitude": 18.6207506,
+        "latitude": 54.3704785
+      },
+      {
+        "longitude": 18.6207908,
+        "latitude": 54.3705160
+      },
+      {
+        "longitude": 18.6207533,
+        "latitude": 54.3705293
+      },
+      {
+        "longitude": 18.6208344,
+        "latitude": 54.3706074
+      },
+      {
+        "longitude": 18.6201927,
+        "latitude": 54.3708305
+      },
+      {
+        "longitude": 18.6200613,
+        "latitude": 54.3707012
+      }
+    ]
+  },
+  {
+    "id": 10026,
+    "tag": "CHEM",
+    "name": "Budynek C Wydziału Chemicznego",
+    "coordinates": [
+      {
+        "longitude": 18.6211905,
+        "latitude": 54.3706934
+      },
+      {
+        "longitude": 18.6217242,
+        "latitude": 54.3705082
+      },
+      {
+        "longitude": 18.6218235,
+        "latitude": 54.3706082
+      },
+      {
+        "longitude": 18.6214580,
+        "latitude": 54.3707336
+      },
+      {
+        "longitude": 18.6215445,
+        "latitude": 54.3708207
+      },
+      {
+        "longitude": 18.6217484,
+        "latitude": 54.3707512
+      },
+      {
+        "longitude": 18.6218496,
+        "latitude": 54.3708488
+      },
+      {
+        "longitude": 18.6216458,
+        "latitude": 54.3709199
+      },
+      {
+        "longitude": 18.6217806,
+        "latitude": 54.3710520
+      },
+      {
+        "longitude": 18.6221407,
+        "latitude": 54.3709285
+      },
+      {
+        "longitude": 18.6222399,
+        "latitude": 54.3710270
+      },
+      {
+        "longitude": 18.6217082,
+        "latitude": 54.3712102
+      },
+      {
+        "longitude": 18.6211905,
+        "latitude": 54.3706934
+      }
+    ]
+  }
+]

@@ -1,0 +1,64 @@
+[
+{
+  "id":10017,
+  "tag": EIA,
+    "numbers": [
+      12
+    ],
+  "name":"Budynek Wydziału Elektrotechniki i Automatyki",
+  "picture":"",
+  "description":"To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10030,
+  "tag": EIA,
+   "numbers": [
+     26
+   ],
+  "name": "Budynek Wysokich Napięć",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10032,
+  "tag": EIA,
+   "numbers": [
+     60
+   ],
+  "name": "Laboratorium LINTE^2",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10033,
+  "tag": EIA,
+   "numbers": [
+     64
+   ],
+  "name": "Pawilon Wydz. Elektrotechniki i Automatyki",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10034,
+  "tag": EIA,
+   "numbers": [
+      61,
+      62,
+      63
+   ],
+  "name": "Budynki A, B, C Wydziału Elektrotechniki i Automatyki",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+}
+]

@@ -1,0 +1,61 @@
+[
+  {
+    "id": 10050,
+    "tag": "CSA",
+    "name": "Centrum Sportu Akademickiego",
+    "coordinates": [
+      {
+        "longitude": 18.6289501,
+        "latitude": 54.3719148
+      },
+      {
+        "longitude": 18.6300659,
+        "latitude": 54.3712899
+      },
+      {
+        "longitude": 18.6292130,
+        "latitude": 54.3708563
+      },
+      {
+        "longitude": 18.6299680,
+        "latitude": 54.3704438
+      },
+      {
+        "longitude": 18.6291647,
+        "latitude": 54.3699867
+      },
+      {
+        "longitude": 18.6312568,
+        "latitude": 54.3687336
+      },
+      {
+        "longitude": 18.6339337,
+        "latitude": 54.3701680
+      },
+      {
+        "longitude": 18.6332738,
+        "latitude": 54.3706149
+      },
+      {
+        "longitude": 18.6329627,
+        "latitude": 54.3704742
+      },
+      {
+        "longitude": 18.6311603,
+        "latitude": 54.3716836
+      },
+      {
+        "longitude": 18.6313748,
+        "latitude": 54.3718258
+      },
+      {
+        "longitude": 18.6303663,
+        "latitude": 54.3726054
+      },
+      {
+        "longitude": 18.6289501,
+        "latitude": 54.3719148
+      }
+    ]
+  }
+]

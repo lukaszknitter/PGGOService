@@ -1,0 +1,14 @@
+[
+{
+  "id":10002,
+  "tag": OIO,
+    "numbers": [
+      30
+    ],
+  "name":"Budynek Wydziału Oceanotechniki",
+  "picture":"",
+  "description":"To jest opis",
+  "facultiesIds":[
+  ]
+}
+]

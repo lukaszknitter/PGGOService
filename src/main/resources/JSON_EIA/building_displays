@@ -1,0 +1,281 @@
+[
+  {
+    "id": 10017,
+    "tag": "EIA",
+    "name": "Budynek Wydziału Elektrotechniki i Automatyki",
+    "coordinates": [
+      {
+        "longitude": 18.6172919,
+        "latitude": 54.3717512
+      },
+      {
+        "longitude": 18.6176627,
+        "latitude": 54.3716223
+      },
+      {
+        "longitude": 18.6182823,
+        "latitude": 54.3722070
+      },
+      {
+        "longitude": 18.6182313,
+        "latitude": 54.3722254
+      },
+      {
+        "longitude": 18.6182448,
+        "latitude": 54.3722433
+      },
+      {
+        "longitude": 18.6181878,
+        "latitude": 54.3722629
+      },
+      {
+        "longitude": 18.6181683,
+        "latitude": 54.3722461
+      },
+      {
+        "longitude": 18.6181113,
+        "latitude": 54.3722660
+      },
+      {
+        "longitude": 18.6181046,
+        "latitude": 54.3722621
+      },
+      {
+        "longitude": 18.6180530,
+        "latitude": 54.3722801
+      },
+      {
+        "longitude": 18.6179175,
+        "latitude": 54.3721445
+      },
+      {
+        "longitude": 18.6178907,
+        "latitude": 54.3721527
+      },
+      {
+        "longitude": 18.6178746,
+        "latitude": 54.3721371
+      },
+      {
+        "longitude": 18.6179014,
+        "latitude": 54.3721281
+      },
+      {
+        "longitude": 18.6178847,
+        "latitude": 54.3721113
+      },
+      {
+        "longitude": 18.6177257,
+        "latitude": 54.3721683
+      },
+      {
+        "longitude": 18.6176057,
+        "latitude": 54.3720480
+      },
+      {
+        "longitude": 18.6178344,
+        "latitude": 54.3719691
+      },
+      {
+        "longitude": 18.6177814,
+        "latitude": 54.3719191
+      },
+      {
+        "longitude": 18.6176989,
+        "latitude": 54.3719461
+      },
+      {
+        "longitude": 18.6175434,
+        "latitude": 54.3717902
+      },
+      {
+        "longitude": 18.6173844,
+        "latitude": 54.3718437
+      },
+      {
+        "longitude": 18.6172919,
+        "latitude": 54.3717512
+      }
+    ]
+  },
+  {
+    "id": 10030,
+    "tag": "EIA",
+    "name": "Budynek Wysokich Napięć",
+    "coordinates": [
+      {
+        "longitude": 18.6175863,
+        "latitude": 54.3743658
+      },
+      {
+        "longitude": 18.6181059,
+        "latitude": 54.3742596
+      },
+      {
+        "longitude": 18.6181945,
+        "latitude": 54.3744033
+      },
+      {
+        "longitude": 18.6180469,
+        "latitude": 54.3744354
+      },
+      {
+        "longitude": 18.6180624,
+        "latitude": 54.3744565
+      },
+      {
+        "longitude": 18.6179618,
+        "latitude": 54.3744760
+      },
+      {
+        "longitude": 18.6179678,
+        "latitude": 54.3744846
+      },
+      {
+        "longitude": 18.6176848,
+        "latitude": 54.3745404
+      },
+      {
+        "longitude": 18.6175863,
+        "latitude": 54.3743658
+      }
+    ]
+  },
+  {
+    "id": 10032,
+    "tag": "EIA",
+    "name": "Laboratorium LINTE^2",
+    "coordinates": [
+      {
+        "longitude": 18.6128783,
+        "latitude": 54.3693164
+      },
+      {
+        "longitude": 18.6126805,
+        "latitude": 54.3689012
+      },
+      {
+        "longitude": 18.6130453,
+        "latitude": 54.3688430
+      },
+      {
+        "longitude": 18.6132478,
+        "latitude": 54.3692570
+      },
+      {
+        "longitude": 18.6128783,
+        "latitude": 54.3693164
+      }
+    ]
+  },
+  {
+    "id": 10033,
+    "tag": "EIA",
+    "name": "Pawilon Wydz. Elektrotechniki i Automatyki",
+    "coordinates": [
+      {
+        "longitude": 18.6124760,
+        "latitude": 54.3682711
+      },
+      {
+        "longitude": 18.6124304,
+        "latitude": 54.3681664
+      },
+      {
+        "longitude": 18.6125940,
+        "latitude": 54.3681425
+      },
+      {
+        "longitude": 18.6125886,
+        "latitude": 54.3681335
+      },
+      {
+        "longitude": 18.6125350,
+        "latitude": 54.3681414
+      },
+      {
+        "longitude": 18.6125216,
+        "latitude": 54.3681132
+      },
+      {
+        "longitude": 18.6126369,
+        "latitude": 54.3680976
+      },
+      {
+        "longitude": 18.6126544,
+        "latitude": 54.3681343
+      },
+      {
+        "longitude": 18.6130285,
+        "latitude": 54.3680773
+      },
+      {
+        "longitude": 18.6130748,
+        "latitude": 54.3681835
+      },
+      {
+        "longitude": 18.6124760,
+        "latitude": 54.3682711
+      }
+    ]
+  },
+  {
+    "id": 10034,
+    "tag": "EIA",
+    "name": "Budynki A, B, C Wydziału Elektrotechniki i Automatyki",
+    "coordinates": [
+      {
+        "longitude": 18.6130902,
+        "latitude": 54.3682195
+      },
+      {
+        "longitude": 18.6132941,
+        "latitude": 54.3686898
+      },
+      {
+        "longitude": 18.6130721,
+        "latitude": 54.3687242
+      },
+      {
+        "longitude": 18.6130607,
+        "latitude": 54.3686972
+      },
+      {
+        "longitude": 18.6126054,
+        "latitude": 54.3687668
+      },
+      {
+        "longitude": 18.6124445,
+        "latitude": 54.3684136
+      },
+      {
+        "longitude": 18.6127295,
+        "latitude": 54.3683711
+      },
+      {
+        "longitude": 18.6127610,
+        "latitude": 54.3684414
+      },
+      {
+        "longitude": 18.6129387,
+        "latitude": 54.3684148
+      },
+      {
+        "longitude": 18.6128864,
+        "latitude": 54.3682988
+      },
+      {
+        "longitude": 18.6129749,
+        "latitude": 54.3682839
+      },
+      {
+        "longitude": 18.6129554,
+        "latitude": 54.3682398
+      },
+      {
+        "longitude": 18.6130902,
+        "latitude": 54.3682195
+      }
+    ]
+  }
+]

@@ -1,0 +1,263 @@
+[
+  {
+    "id": 10006,
+    "tag": "ILIS",
+    "name": "Budynek Wydziału Inżynierii Lądowej i Środowiska",
+    "coordinates": [
+      {
+        "longitude": 18.6159763,
+        "latitude": 54.3716406
+      },
+      {
+        "longitude": 18.6159300,
+        "latitude": 54.3715547
+      },
+      {
+        "longitude": 18.6160722,
+        "latitude": 54.3715273
+      },
+      {
+        "longitude": 18.6160205,
+        "latitude": 54.3714293
+      },
+      {
+        "longitude": 18.6161412,
+        "latitude": 54.3714047
+      },
+      {
+        "longitude": 18.6161204,
+        "latitude": 54.3713547
+      },
+      {
+        "longitude": 18.6163833,
+        "latitude": 54.3713067
+      },
+      {
+        "longitude": 18.6164088,
+        "latitude": 54.3713555
+      },
+      {
+        "longitude": 18.6165328,
+        "latitude": 54.3713332
+      },
+      {
+        "longitude": 18.6166388,
+        "latitude": 54.3715305
+      },
+      {
+        "longitude": 18.6161278,
+        "latitude": 54.3716258
+      },
+      {
+        "longitude": 18.6161198,
+        "latitude": 54.3716141
+      },
+      {
+        "longitude": 18.6159763,
+        "latitude": 54.3716406
+      },
+      {
+        "longitude": 18.6159300,
+        "latitude": 54.3715547
+      },
+      {
+        "longitude": 18.6160722,
+        "latitude": 54.3715273
+      },
+      {
+        "longitude": 18.6160205,
+        "latitude": 54.3714293
+      },
+      {
+        "longitude": 18.6161412,
+        "latitude": 54.3714047
+      },
+      {
+        "longitude": 18.6161204,
+        "latitude": 54.3713547
+      },
+      {
+        "longitude": 18.6163833,
+        "latitude": 54.3713067
+      },
+      {
+        "longitude": 18.6164088,
+        "latitude": 54.3713555
+      },
+      {
+        "longitude": 18.6165328,
+        "latitude": 54.3713332
+      },
+      {
+        "longitude": 18.6166388,
+        "latitude": 54.3715305
+      },
+      {
+        "longitude": 18.6161278,
+        "latitude": 54.3716258
+      },
+      {
+        "longitude": 18.6161198,
+        "latitude": 54.3716141
+      },
+      {
+        "longitude": 18.6159763,
+        "latitude": 54.3716406
+      },
+      {
+        "longitude": 18.6159763,
+        "latitude": 54.3716406
+      },
+      {
+        "longitude": 18.6160460,
+        "latitude": 54.3717402
+      },
+      {
+        "longitude": 18.6157215,
+        "latitude": 54.3718000
+      },
+      {
+        "longitude": 18.6153620,
+        "latitude": 54.3711402
+      },
+      {
+        "longitude": 18.6156671,
+        "latitude": 54.3710801
+      },
+      {
+        "longitude": 18.6159300,
+        "latitude": 54.3715547
+      },
+      {
+        "longitude": 18.6159763,
+        "latitude": 54.3716406
+      }
+    ]
+  },
+  {
+    "id": 10008,
+    "tag": "ILIS",
+    "name": "Żelbet",
+    "coordinates": [
+      {
+        "longitude": 18.6160983,
+        "latitude": 54.3707129
+      },
+      {
+        "longitude": 18.6160185,
+        "latitude": 54.3706332
+      },
+      {
+        "longitude": 18.6160494,
+        "latitude": 54.3706231
+      },
+      {
+        "longitude": 18.6160172,
+        "latitude": 54.3705883
+      },
+      {
+        "longitude": 18.6161761,
+        "latitude": 54.3705332
+      },
+      {
+        "longitude": 18.6162110,
+        "latitude": 54.3705672
+      },
+      {
+        "longitude": 18.6162398,
+        "latitude": 54.3705567
+      },
+      {
+        "longitude": 18.6163203,
+        "latitude": 54.3706344
+      },
+      {
+        "longitude": 18.6162988,
+        "latitude": 54.3706418
+      },
+      {
+        "longitude": 18.6165999,
+        "latitude": 54.3709414
+      },
+      {
+        "longitude": 18.6167595,
+        "latitude": 54.3709641
+      },
+      {
+        "longitude": 18.6167809,
+        "latitude": 54.3709219
+      },
+      {
+        "longitude": 18.6169875,
+        "latitude": 54.3709520
+      },
+      {
+        "longitude": 18.6169063,
+        "latitude": 54.3711481
+      },
+      {
+        "longitude": 18.6166971,
+        "latitude": 54.3711188
+      },
+      {
+        "longitude": 18.6166723,
+        "latitude": 54.3711824
+      },
+      {
+        "longitude": 18.6163712,
+        "latitude": 54.3711387
+      },
+      {
+        "longitude": 18.6164249,
+        "latitude": 54.3710102
+      },
+      {
+        "longitude": 18.6161171,
+        "latitude": 54.3707063
+      },
+      {
+        "longitude": 18.6160983,
+        "latitude": 54.3707129
+      }
+    ]
+  },
+  {
+    "id": 10013,
+    "tag": "ILIS",
+    "name": "Kuźnia",
+    "coordinates": [
+      {
+        "longitude": 18.6163712,
+        "latitude": 54.3723293
+      },
+      {
+        "longitude": 18.6162324,
+        "latitude": 54.3720758
+      },
+      {
+        "longitude": 18.6162619,
+        "latitude": 54.3720262
+      },
+      {
+        "longitude": 18.6165818,
+        "latitude": 54.3719707
+      },
+      {
+        "longitude": 18.6166770,
+        "latitude": 54.3721488
+      },
+      {
+        "longitude": 18.6164691,
+        "latitude": 54.3721855
+      },
+      {
+        "longitude": 18.6165201,
+        "latitude": 54.3723023
+      },
+      {
+        "longitude": 18.6163712,
+        "latitude": 54.3723293
+      }
+    ]
+  }
+]

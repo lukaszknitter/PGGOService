@@ -1,0 +1,26 @@
+[
+{
+  "id":10010,
+  "tag": GG,
+    "numbers": [
+      10
+    ],
+  "name":"Gmach B",
+  "picture":"",
+  "description":"To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id":10019,
+  "tag": GG,
+    "numbers": [
+      1
+    ],
+  "name":"Gmach Główny",
+  "picture":"",
+  "description":"To jest opis",
+  "facultiesIds":[
+  ]
+}
+]

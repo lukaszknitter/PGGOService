@@ -1,0 +1,17 @@
+[
+{
+  "id":10050,
+  "tag": CSA,
+    "numbers": [
+      70,
+      71,
+      72,
+      73
+    ],
+  "name":"Centrum Sportu Akademickiego",
+  "picture":"",
+  "description":"To jest opis",
+  "facultiesIds":[
+  ]
+}
+]

@@ -28,6 +28,8 @@ public class BuildingDisplayService {
 		}
 
 		BuildingDisplay buildingDisplay = mapper.map(dto, BuildingDisplay.class);
+		System.out.println(buildingDisplay.getName());
+
 		buildingDisplayRepository.saveAndFlush(buildingDisplay);
 		return mapper.map(buildingDisplay, BuildingDisplayDto.class);
 	}

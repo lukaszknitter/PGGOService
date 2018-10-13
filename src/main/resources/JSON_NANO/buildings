@@ -1,0 +1,26 @@
+[
+{
+  "id":10014,
+  "tag": NANO,
+    "numbers": [
+      18
+    ],
+  "name":"Centrum Nanotechnologii B Centrum Nauczania Matematyki i Kształcenia na Odległość",
+  "picture":"",
+  "description":"To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10024,
+  "tag": NANO,
+   "numbers": [
+     4
+   ],
+  "name": "Centrum Nanotechnologii A",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+}
+]

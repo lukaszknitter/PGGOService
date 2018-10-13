@@ -19,7 +19,7 @@ public class BuildingDto {
 	private Tag tag;
 	private List<String> facultiesNames;
 	private List<Long> facultiesIds;
-	public List<Integer> administrativeNumbers;
+	public List<Integer> numbers;
 
 	public BuildingDto(BuildingDto buildingDto) {
 		this.id = buildingDto.getId();
@@ -28,6 +28,6 @@ public class BuildingDto {
 		this.description = buildingDto.getDescription();
 		this.facultiesNames = buildingDto.getFacultiesNames();
 		this.facultiesIds = buildingDto.getFacultiesIds();
-		this.administrativeNumbers = buildingDto.getAdministrativeNumbers();
+		this.numbers = buildingDto.getNumbers();
 	}
 }

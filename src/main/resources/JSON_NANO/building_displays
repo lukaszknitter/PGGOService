@@ -1,0 +1,88 @@
+[
+  {
+    "id": 10014,
+    "tag": "NANO",
+    "name": "Centrum Nanotechnologii B Centrum Nauczania Matematyki i Kształcenia na Odległość",
+    "coordinates": [
+      {
+        "longitude": 18.6156182,
+        "latitude": 54.3722051
+      },
+      {
+        "longitude": 18.6158744,
+        "latitude": 54.3721562
+      },
+      {
+        "longitude": 18.6161151,
+        "latitude": 54.3725851
+      },
+      {
+        "longitude": 18.6158562,
+        "latitude": 54.3726332
+      },
+      {
+        "longitude": 18.6156182,
+        "latitude": 54.3722051
+      }
+    ]
+  },
+  {
+    "id": 10024,
+    "tag": "NANO",
+    "name": "Centrum Nanotechnologii A",
+    "coordinates": [
+      {
+        "longitude": 18.6218020,
+        "latitude": 54.3713133
+      },
+      {
+        "longitude": 18.6223063,
+        "latitude": 54.3711414
+      },
+      {
+        "longitude": 18.6225396,
+        "latitude": 54.3713727
+      },
+      {
+        "longitude": 18.6224417,
+        "latitude": 54.3714051
+      },
+      {
+        "longitude": 18.6224632,
+        "latitude": 54.3714285
+      },
+      {
+        "longitude": 18.6224136,
+        "latitude": 54.3714457
+      },
+      {
+        "longitude": 18.6224384,
+        "latitude": 54.3714684
+      },
+      {
+        "longitude": 18.6222339,
+        "latitude": 54.3715402
+      },
+      {
+        "longitude": 18.6222104,
+        "latitude": 54.3715160
+      },
+      {
+        "longitude": 18.6221621,
+        "latitude": 54.3715340
+      },
+      {
+        "longitude": 18.6221373,
+        "latitude": 54.3715117
+      },
+      {
+        "longitude": 18.6220407,
+        "latitude": 54.3715461
+      },
+      {
+        "longitude": 18.6218020,
+        "latitude": 54.3713133
+      }
+    ]
+  }
+]

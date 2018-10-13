@@ -1,84 +1,172 @@
 [
-{
-  "id": 10001,
-  "tag": ETI,
-  "name": "Nazwa1",
-  "coordinates": [
-    {
-      "longitude": 18.612276,
-      "latitude": 54.371483
-    },
-    {
-      "longitude": 18.612071,
-      "latitude": 54.371613
-    },
-    {
-      "longitude": 18.611709,
-      "latitude": 54.371678
-    },
-    {
-      "longitude": 18.61170889,
-      "latitude": 54.37167859
-    },
-    {
-      "longitude": 18.6118261,
-      "latitude": 54.37189876
-    },
-    {
-      "longitude": 18.61219848,
-      "latitude": 54.37183237
-    },
-    {
-      "longitude": 18.61247273,
-      "latitude": 54.37187026
-    },
-    {
-      "longitude": 18.61274931,
-      "latitude": 54.37201993
-    },
-    {
-      "longitude": 18.61301465,
-      "latitude": 54.37185386
-    },
-    {
-      "longitude": 18.61273455,
-      "latitude": 54.37170126
-    },
-    {
-      "longitude": 18.61265178,
-      "latitude": 54.37154415
-    },
-    {
-      "longitude": 18.61273709,
-      "latitude": 54.37132511
-    },
-    {
-      "longitude": 18.61235991,
-      "latitude": 54.3712744
-    }
-  ]
-},
-{
-  "id": 10002,
-  "tag": ETI,
-  "name": "Nazwa2",
-  "coordinates": [
-    {
-      "longitude": 18.612467,
-      "latitude": 54.371068
-    },
-    {
-      "longitude": 18.612405,
-      "latitude": 54.370966
-    },
-    {
-      "longitude": 18.614062,
-      "latitude": 54.370677
-    },
-    {
-      "longitude": 18.614164,
-      "latitude": 54.370766
-    }
-  ]
-}
+  {
+    "id": 10000,
+    "tag": "ETI",
+    "name": "Budynek B Wydziału ETI",
+    "coordinates": [
+      {
+        "longitude": 18.6118410,
+        "latitude": 54.3718961
+      },
+      {
+        "longitude": 18.6117283,
+        "latitude": 54.3716836
+      },
+      {
+        "longitude": 18.6120931,
+        "latitude": 54.3716188
+      },
+      {
+        "longitude": 18.6122856,
+        "latitude": 54.3714973
+      },
+      {
+        "longitude": 18.6123680,
+        "latitude": 54.3712840
+      },
+      {
+        "longitude": 18.6127335,
+        "latitude": 54.3713332
+      },
+      {
+        "longitude": 18.6126450,
+        "latitude": 54.3715523
+      },
+      {
+        "longitude": 18.6127254,
+        "latitude": 54.3717066
+      },
+      {
+        "longitude": 18.6130037,
+        "latitude": 54.3718570
+      },
+      {
+        "longitude": 18.6127529,
+        "latitude": 54.3720176
+      },
+      {
+        "longitude": 18.6124706,
+        "latitude": 54.3718684
+      },
+      {
+        "longitude": 18.6122017,
+        "latitude": 54.3718320
+      },
+      {
+        "longitude": 18.6118410,
+        "latitude": 54.3718961
+      }
+    ]
+  },
+  {
+    "id": 10001,
+    "tag": "ETI",
+    "name": "Budynek A Wydziału ETI",
+    "coordinates": [
+      {
+        "longitude": 18.6124894,
+        "latitude": 54.3710738
+      },
+      {
+        "longitude": 18.6124277,
+        "latitude": 54.3709586
+      },
+      {
+        "longitude": 18.6129595,
+        "latitude": 54.3708629
+      },
+      {
+        "longitude": 18.6129373,
+        "latitude": 54.3708199
+      },
+      {
+        "longitude": 18.6123452,
+        "latitude": 54.3708629
+      },
+      {
+        "longitude": 18.6123090,
+        "latitude": 54.3707051
+      },
+      {
+        "longitude": 18.6125893,
+        "latitude": 54.3706863
+      },
+      {
+        "longitude": 18.6128750,
+        "latitude": 54.3706344
+      },
+      {
+        "longitude": 18.6128676,
+        "latitude": 54.3706195
+      },
+      {
+        "longitude": 18.6129802,
+        "latitude": 54.3705969
+      },
+      {
+        "longitude": 18.6129876,
+        "latitude": 54.3706164
+      },
+      {
+        "longitude": 18.6132693,
+        "latitude": 54.3705649
+      },
+      {
+        "longitude": 18.6133504,
+        "latitude": 54.3706645
+      },
+      {
+        "longitude": 18.6130989,
+        "latitude": 54.3707731
+      },
+      {
+        "longitude": 18.6131251,
+        "latitude": 54.3708317
+      },
+      {
+        "longitude": 18.6137018,
+        "latitude": 54.3707281
+      },
+      {
+        "longitude": 18.6136783,
+        "latitude": 54.3706887
+      },
+      {
+        "longitude": 18.6135925,
+        "latitude": 54.3707028
+      },
+      {
+        "longitude": 18.6135556,
+        "latitude": 54.3706383
+      },
+      {
+        "longitude": 18.6137259,
+        "latitude": 54.3706086
+      },
+      {
+        "longitude": 18.6137641,
+        "latitude": 54.3706707
+      },
+      {
+        "longitude": 18.6137152,
+        "latitude": 54.3706820
+      },
+      {
+        "longitude": 18.6137360,
+        "latitude": 54.3707211
+      },
+      {
+        "longitude": 18.6141095,
+        "latitude": 54.3706535
+      },
+      {
+        "longitude": 18.6141718,
+        "latitude": 54.3707715
+      },
+      {
+        "longitude": 18.6124894,
+        "latitude": 54.3710738
+      }
+    ]
+  }
 ]

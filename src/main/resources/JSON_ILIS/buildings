@@ -1,0 +1,39 @@
+[
+{
+  "id":10006,
+  "tag": ILIS,
+    "numbers": [
+      20
+    ],
+  "name":"Budynek Wydziału Inżynierii Lądowej i Środowiska",
+  "picture":"",
+  "description":"To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10008,
+  "tag": ILIS,
+   "numbers": [
+     21,
+     22
+   ],
+  "name": "Żelbet",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+},
+{
+  "id": 10013,
+  "tag": ILIS,
+   "numbers": [
+     16
+   ],
+  "name": "Kuźnia",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
+}
+]
