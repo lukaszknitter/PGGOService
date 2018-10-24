@@ -10,9 +10,6 @@ import app.models.faculty.FacultyService;
 import com.google.gson.Gson;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.TypeToken;
-import org.springframework.core.io.Resource;
-import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
-import org.springframework.core.io.support.ResourcePatternResolver;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
@@ -21,10 +18,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Type;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Objects;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 @Service
 @RequiredArgsConstructor
@@ -35,6 +32,23 @@ public class DataLoader {
 	private final FacultyService facultyService;
 
 	public void loadBuildings() {
+
+		String resources = "resources";
+
+		ArrayList<File> files = new ArrayList<>();
+		try {
+			Files.walk(Paths.get(resources))
+					.filter(Files::isRegularFile)
+					.forEach(path -> {
+						System.out.println(path.toUri());
+						files.add(new File(path.toUri()));
+					});
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		readJsonDataFromFiles(files);
+
+/*
 		ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver(this.getClass().getClassLoader());
 		try {
 			Resource[] resources = resolver.getResources("classpath:/*");
@@ -52,10 +66,10 @@ public class DataLoader {
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
+		}*/
 	}
 
-	private void readJsonDataFromFiles(File[] files) {
+	private void readJsonDataFromFiles(ArrayList<File> files) {
 		Gson gson = new Gson();
 		Type departmentListType = new TypeToken<ArrayList<DepartmentDto>>() {
 		}.getType();
@@ -74,16 +88,16 @@ public class DataLoader {
 		for (File file : files) {
 			switch (file.getName()) {
 				case "building_displays":
-					buildingDisplays = gson.fromJson(readDataFromFile(file), buildingDisplayListType);
+					buildingDisplays.addAll(gson.fromJson(readDataFromFile(file), buildingDisplayListType));
 					break;
 				case "departments":
-					departments = gson.fromJson(readDataFromFile(file), departmentListType);
+					departments.addAll(gson.fromJson(readDataFromFile(file), departmentListType));
 					break;
 				case "buildings":
-					buildings = gson.fromJson(readDataFromFile(file), buildingListType);
+					buildings.addAll(gson.fromJson(readDataFromFile(file), buildingListType));
 					break;
 				case "faculties":
-					faculties = gson.fromJson(readDataFromFile(file), facultyListType);
+					faculties.addAll(gson.fromJson(readDataFromFile(file), facultyListType));
 					break;
 				default:
 					System.out.println("Loaded picture: " + file.getName());

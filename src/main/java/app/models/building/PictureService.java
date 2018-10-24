@@ -1,14 +1,14 @@
 package app.models.building;
 
-import org.springframework.core.io.Resource;
-import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
-import org.springframework.core.io.support.ResourcePatternResolver;
 import org.springframework.stereotype.Component;
-import sun.misc.BASE64Encoder;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Base64;
 
 @Component
 public class PictureService {
@@ -21,8 +21,7 @@ public class PictureService {
 			ImageIO.write(image, type, bos);
 			byte[] imageBytes = bos.toByteArray();
 
-			BASE64Encoder encoder = new BASE64Encoder();
-			imageString = encoder.encode(imageBytes);
+			imageString = Base64.getEncoder().encodeToString(imageBytes);
 
 			bos.close();
 		} catch (IOException e) {
@@ -32,20 +31,24 @@ public class PictureService {
 	}
 
 	String getPicture(String name) throws IOException {
-		ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver(this.getClass().getClassLoader());
+		String resources = "resources";
 
-		Resource[] resources = resolver.getResources("classpath:/*");
-		for (Resource resource : resources) {
-			File[] files = resource.getFile().listFiles();
-			if (files != null) {
-				for (File file : files) {
-					if (file.getName().equals(name)) {
-						final InputStream inputStream = new DataInputStream(new FileInputStream(file));
-						return encodeToString(ImageIO.read(inputStream), "png");
-					}
-				}
-			}
+		ArrayList<File> files = new ArrayList<>();
+		try {
+			Files.walk(Paths.get(resources))
+					.filter(Files::isRegularFile)
+					.forEach(path -> {
+						files.add(new File(path.toUri()));
+					});
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
-		return "";
+
+		File photoFile = files.stream()
+				.filter(file -> file.getName().equals(name))
+				.findFirst().get();
+
+		final InputStream inputStream = new DataInputStream(new FileInputStream(photoFile));
+		return encodeToString(ImageIO.read(inputStream), "png");
 	}
 }
