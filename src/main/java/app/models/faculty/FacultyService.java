@@ -28,7 +28,7 @@ public class FacultyService {
 	public FacultyDto createFaculty(FacultyCreationDto dto) {
 		Optional<Faculty> facultyWithSameName = repository.findFirstByName(dto.getName());
 		if (facultyWithSameName.isPresent()) {
-			throw new ConflictException(String.format("Faculty with name '%s' already exists", dto.getName()));
+			return mapper.map(facultyWithSameName.get(), FacultyDto.class);
 		}
 		Faculty faculty = repository.saveAndFlush(mapper.map(dto, Faculty.class));
 		return mapper.map(faculty, FacultyDto.class);
