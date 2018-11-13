@@ -1,0 +1,24 @@
+[
+{
+  "id": 10100,
+  "tag": OTHER,
+  "type": BIKE_PARK,
+  "name": "Parking dla rowerów",
+    "coordinate":
+          {
+            "longitude": 18.614073,
+            "latitude": 54.372446
+          }
+},
+{
+  "id": 10091,
+  "tag": OTHER,
+  "type": BUS_STOP,
+  "name":"Testowe POI",
+  "coordinate":
+        {
+          "longitude": 18.614274,
+          "latitude": 54.372416
+        }
+}
+]

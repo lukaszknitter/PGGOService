@@ -9,6 +9,8 @@
   "picture":"eti_building.PNG",
   "description":"To jest opis",
   "facultiesIds":[
+        "10090",
+        "10091"
   ]
 },
 {
@@ -21,6 +23,8 @@
   "picture": "stare_building.PNG",
   "description": "To jest opis",
   "facultiesIds":[
+      "10090",
+      "10091"
   ]
 }
 ]

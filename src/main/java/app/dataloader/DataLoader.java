@@ -2,6 +2,8 @@ package app.dataloader;
 
 import app.display.building.BuildingDisplayDto;
 import app.display.building.BuildingDisplayService;
+import app.display.poi.POIDto;
+import app.display.poi.POIService;
 import app.models.building.BuildingCreationDto;
 import app.models.building.BuildingService;
 import app.models.department.DepartmentDto;
@@ -30,6 +32,7 @@ public class DataLoader {
 	private final BuildingDisplayService buildingDisplayService;
 	private final BuildingService buildingService;
 	private final FacultyService facultyService;
+	private final POIService poiService;
 
 	public void loadBuildings() {
 
@@ -79,11 +82,14 @@ public class DataLoader {
 		}.getType();
 		Type buildingListType = new TypeToken<ArrayList<BuildingCreationDto>>() {
 		}.getType();
+		Type POIListType = new TypeToken<ArrayList<POIDto>>() {
+		}.getType();
 
 		ArrayList<BuildingDisplayDto> buildingDisplays = new ArrayList<>();
 		ArrayList<DepartmentDto> departments = new ArrayList<>();
 		ArrayList<BuildingCreationDto> buildings = new ArrayList<>();
 		ArrayList<FacultyCreationDto> faculties = new ArrayList<>();
+		ArrayList<POIDto> pois = new ArrayList<>();
 
 		for (File file : files) {
 			switch (file.getName()) {
@@ -99,19 +105,23 @@ public class DataLoader {
 				case "faculties":
 					faculties.addAll(gson.fromJson(readDataFromFile(file), facultyListType));
 					break;
+				case "poi":
+					pois.addAll(gson.fromJson(readDataFromFile(file), POIListType));
+					break;
 				default:
 					System.out.println("Loaded picture: " + file.getName());
 					break;
 			}
 		}
 
-		saveDataToDatabase(buildingDisplays, buildings, faculties, departments);
+		saveDataToDatabase(buildingDisplays, buildings, faculties, departments, pois);
 	}
 
 	private void saveDataToDatabase(ArrayList<BuildingDisplayDto> buildingDisplays,
 									ArrayList<BuildingCreationDto> buildings,
 									ArrayList<FacultyCreationDto> faculties,
-									ArrayList<DepartmentDto> departments) {
+									ArrayList<DepartmentDto> departments,
+									ArrayList<POIDto> pois) {
 		buildings.stream()
 				.filter(Objects::nonNull)
 				.forEach(buildingDto -> {
@@ -153,7 +163,7 @@ public class DataLoader {
 
 							});
 				});
-
+		pois.forEach(poiDto -> poiService.createPOI(poiDto));
 		buildingDisplays.forEach((buildingDisplayService::createBuildingDisplay));
 	}
 

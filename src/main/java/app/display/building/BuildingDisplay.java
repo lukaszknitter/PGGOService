@@ -22,4 +22,7 @@ public class BuildingDisplay extends BaseEntity {
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	@JoinColumn(name = "building_display_id")
 	public List<Coordinate> coordinates;
+
+	@OneToOne
+	public Coordinate center;
 }
