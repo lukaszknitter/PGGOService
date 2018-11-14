@@ -2,19 +2,97 @@
 {
   "id": 10190,
   "tag": ETI,
-  "name": "KISI",
+  "name": "Inteligentnych Systemów Interaktywnych",
   "description": "Katedra Inteligentnych Systemów Interaktywnych jest jednym z pięciu filarów kierunku Informatyka na Wydziale Elektroniki, Telekomunikacji i Informatyki i działa w obecnie najszybciej rozwijających się obszarach technologii informacyjnych, stanowiących zręby rodzącego się społeczeństwa informacyjnego XXI wieku: interaktywnych i wielopostaciowych dokumentów cyfrowych, wirtualnych zespołów roboczych, inteligentnego gromadzenia i wyszukiwania informacji, widzenia komputerowego oraz wizualizacji informacji i zjawisk."
 },
 {
   "id": 10191,
   "tag": ETI,
-  "name": "KTI",
-  "description": "Druga najlepsza katedra"
+  "name": "Teleinformatyki",
+  "description": "Katedra Teleinformatyki - "
 },
 {
   "id": 10192,
   "tag": ETI,
-  "name": "KISI2",
-  "description": "COS"
+  "name": "Algorytmów i Modelowania Systemów",
+  "description": "Katedra Algorytmów i Modelowania Systemów - "
+},
+{
+  "id": 10193,
+  "tag": ETI,
+  "name": "Architektury Systemów Komputerowych ",
+  "description": "Katedra Architektury Systemów Komputerowych - "
+},
+{
+  "id": 10194,
+  "tag": ETI,
+  "name": "Inżynierii Biomedycznej",
+  "description": "Katedra Inżynierii Biomedycznej - "
+},
+{
+  "id": 10195,
+  "tag": ETI,
+  "name": "Inżynierii Mikrofalowej i Antenowej",
+  "description": "Katedra Inżynierii Mikrofalowej i Antenowej - "
+},
+{
+  "id": 10196,
+  "tag": ETI,
+  "name": "Inżynierii Oprogramowania ",
+  "description": "Katedra Inżynierii Oprogramowania - "
+},
+{
+  "id": 10197,
+  "tag": ETI,
+  "name": "Metrologii i Optoelektroniki",
+  "description": "Katedra Metrologii i Optoelektroniki - "
+},
+{
+  "id": 10198,
+  "tag": ETI,
+  "name": "Sieci Teleinformacyjnych ",
+  "description": "Katedra Sieci Teleinformacyjnych - "
+},
+{
+  "id": 10199,
+  "tag": ETI,
+  "name": "Systemów Automatyki",
+  "description": "Katedra Systemów Automatyki - "
+},
+{
+  "id": 10200,
+  "tag": ETI,
+  "name": "Systemów Decyzyjnych i Robotyki ",
+  "description": "Katedra Systemów Decyzyjnych i Robotyki - "
+},
+{
+  "id": 10201,
+  "tag": ETI,
+  "name": "Systemów Elektroniki Morskiej",
+  "description": "Katedra Systemów Elektroniki Morskiej - "
+},
+{
+  "id": 10202,
+  "tag": ETI,
+  "name": "Systemów Geoinformatycznych",
+  "description": "Katedra Systemów Geoinformatycznych - "
+},
+{
+  "id": 10203,
+  "tag": ETI,
+  "name": "Systemów i Sieci Radiokomunikacyjnych",
+  "description": "Katedra Systemów i Sieci Radiokomunikacyjnych -"
+},
+{
+  "id": 10204,
+  "tag": ETI,
+  "name": "Systemów Mikroelektronicznych",
+  "description": "Katedra Systemów Mikroelektronicznych - "
+},
+{
+  "id": 10205,
+  "tag": ETI,
+  "name": "Systemów Multimedialnych",
+  "description": "Katedra Systemów Multimedialnych - "
 }
 ]

@@ -7,10 +7,9 @@
     ],
   "name":"Budynek B Wydziału ETI",
   "picture":"eti_building.PNG",
-  "description":"To jest opis",
+  "description":"Największy z wydziałów Politechniki Gdańskiej. Składa się z 16 katedr zatrudniających blisko 200 pracowników naukowo-dydaktycznych i naukowych, w tym trzech członków korespondentów Polskiej Akademii Nauk. Na Wydziale kształci się około 4 000 studentów na kierunkach: informatyka, elektronika i telekomunikacja, inżynieria biomedyczna, automatyka i robotyka oraz inżynieria danych, na studiach I i II stopnia oraz studiach doktoranckich. Wydział należy do najlepszych jednostek akademickich w Polsce, od roku 1992 utrzymuje kategorię naukową A. Działalność naukowa Wydziału obejmuje szeroki zakres nowoczesnych technologii informacyjnych i komunikacyjnych. Wydział ma pełne prawa akademickie w dyscyplinach: informatyka, elektronika i telekomunikacja, a ponadto prawa doktoryzowania w dyscyplinach: biocybernetyka i inżynieria biomedyczna oraz automatyka i robotyka. W 2017 uzyskał akredytację w najwyższej kategorii A+, nadaną przez Komitet Ewaluacji Jednostek Naukowych.",
   "facultiesIds":[
-        "10090",
-        "10091"
+        "10090"
   ]
 },
 {
