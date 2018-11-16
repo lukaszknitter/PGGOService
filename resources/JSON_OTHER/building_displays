@@ -78,7 +78,7 @@
     }
   },
   {
-    "id": 10011,
+    "id": 10012,
     "tag": "OTHER",
     "name": "Misiówka",
     "coordinates": [
@@ -109,7 +109,7 @@
     }
   },
   {
-    "id": 10014,
+    "id": 10015,
     "tag": "OTHER",
     "name": "Audytorium Novum",
     "coordinates": [
@@ -168,7 +168,7 @@
     }
   },
   {
-    "id": 10019,
+    "id": 10020,
     "tag": "OTHER",
     "name": "Dział Promocji",
     "coordinates": [
@@ -207,7 +207,7 @@
     }
   },
   {
-    "id": 10020,
+    "id": 10021,
     "tag": "OTHER",
     "name": "Portiernia Główna",
     "coordinates": [
@@ -246,7 +246,7 @@
     }
   },
   {
-    "id": 10024,
+    "id": 10025,
     "tag": "OTHER",
     "name": "Magazyn Odpadów i Odczynników Chemicznych",
     "coordinates": [
@@ -277,7 +277,7 @@
     }
   },
   {
-    "id": 10026,
+    "id": 10027,
     "tag": "OTHER",
     "name": "Zespół Opieki Zdrowotnej",
     "coordinates": [
@@ -348,7 +348,7 @@
     }
   },
   {
-    "id": 10027,
+    "id": 10028,
     "tag": "OTHER",
     "name": "Budynek Centrum Wiedzy i Przedsiębiorczości",
     "coordinates": [
@@ -411,7 +411,7 @@
     }
   },
   {
-    "id": 10028,
+    "id": 10029,
     "tag": "OTHER",
     "name": "Budynek 25",
     "coordinates": [
@@ -482,7 +482,7 @@
     }
   },
   {
-    "id": 10030,
+    "id": 10031,
     "tag": "OTHER",
     "name": "Centrum Obsługi Technicznej",
     "coordinates": [
@@ -513,7 +513,7 @@
     }
   },
   {
-    "id": 10047,
+    "id": 10048,
     "tag": "OTHER",
     "name": "Budynki Działu Gospodarczego",
     "coordinates": [
@@ -608,7 +608,7 @@
     }
   },
   {
-    "id": 10048,
+    "id": 10049,
     "tag": "OTHER",
     "name": "Budynek Działu Gospodarczego Wirtualna Polska",
     "coordinates": [
@@ -671,7 +671,7 @@
     }
   },
   {
-    "id": 10050,
+    "id": 10051,
     "tag": "OTHER",
     "name": "Pawilony Jugosłowiańskie",
     "coordinates": [

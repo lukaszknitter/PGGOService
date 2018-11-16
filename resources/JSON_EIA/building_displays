@@ -1,6 +1,6 @@
 [
   {
-    "id": 10016,
+    "id": 10017,
     "tag": "EIA",
     "name": "Budynek Wydziału Elektrotechniki i Automatyki",
     "coordinates": [
@@ -103,7 +103,7 @@
     }
   },
   {
-    "id": 10029,
+    "id": 10030,
     "tag": "EIA",
     "name": "Budynek Wysokich Napięć",
     "coordinates": [
@@ -150,7 +150,7 @@
     }
   },
   {
-    "id": 10031,
+    "id": 10032,
     "tag": "EIA",
     "name": "Laboratorium LINTE^2",
     "coordinates": [
@@ -181,7 +181,7 @@
     }
   },
   {
-    "id": 10032,
+    "id": 10033,
     "tag": "EIA",
     "name": "Pawilon Wydz. Elektrotechniki i Automatyki",
     "coordinates": [
@@ -236,7 +236,7 @@
     }
   },
   {
-    "id": 10033,
+    "id": 10034,
     "tag": "EIA",
     "name": "Budynki A, B, C Wydziału Elektrotechniki i Automatyki",
     "coordinates": [

@@ -1,6 +1,6 @@
 [
   {
-    "id": 10010,
+    "id": 10011,
     "tag": "CHEM",
     "name": "Inżynieria Chemiczna",
     "coordinates": [
@@ -31,7 +31,7 @@
     }
   },
   {
-    "id": 10021,
+    "id": 10022,
     "tag": "CHEM",
     "name": "Budynek A Wydziału Chemicznego",
     "coordinates": [
@@ -174,7 +174,7 @@
     }
   },
   {
-    "id": 10022,
+    "id": 10023,
     "tag": "CHEM",
     "name": "Budynek B Wydziału Chemicznego",
     "coordinates": [
@@ -221,7 +221,7 @@
     }
   },
   {
-    "id": 10025,
+    "id": 10026,
     "tag": "CHEM",
     "name": "Budynek C Wydziału Chemicznego",
     "coordinates": [
