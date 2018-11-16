@@ -157,5 +157,18 @@
   "description": "To jest opis",
   "facultiesIds":[
   ]
+},
+{
+  "id": 10051,
+  "tag": OTHER,
+   "numbers": [
+     43,
+	 44
+   ],
+  "name": "Pawilony Jugosłowiańskie",
+  "picture": "",
+  "description": "To jest opis",
+  "facultiesIds":[
+  ]
 }
 ]
