@@ -64,10 +64,14 @@
         "longitude": 18.6147720,
         "latitude": 54.3722160
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6145306,
+      "latitude": 54.3716586
+    }
   },
   {
-    "id": 10016,
+    "id": 10015,
     "tag": "MECH",
     "name": "Laboratorium Maszynowe",
     "coordinates": [
@@ -159,10 +163,14 @@
         "longitude": 18.6165241,
         "latitude": 54.3727293
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6171591,
+      "latitude": 54.3722476
+    }
   },
   {
-    "id": 10018,
+    "id": 10017,
     "tag": "MECH",
     "name": "Hydromechanika",
     "coordinates": [
@@ -242,6 +250,10 @@
         "longitude": 18.6176285,
         "latitude": 54.3713055
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6182079,
+      "latitude": 54.3717492
+    }
   }
 ]

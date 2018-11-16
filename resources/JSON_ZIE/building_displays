@@ -1,6 +1,6 @@
 [
   {
-    "id": 10009,
+    "id": 10008,
     "tag": "ZIE",
     "name": "Budynek Wydziału Zarządzania i Ekonomii",
     "coordinates": [
@@ -76,6 +76,10 @@
         "longitude": 18.6163652,
         "latitude": 54.3702922
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6165771,
+      "latitude": 54.3703086
+    }
   }
 ]

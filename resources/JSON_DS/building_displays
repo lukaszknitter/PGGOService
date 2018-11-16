@@ -1,9 +1,6 @@
 [
   {
-    "id": 10035,
-    "number": [
-      111
-    ],
+    "id": 10034,
     "tag": "DS",
     "name": "Dom Studencki 13",
     "coordinates": [
@@ -59,13 +56,14 @@
         "longitude": 18.6106635,
         "latitude": 54.3690488
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6107299,
+      "latitude": 54.3687148
+    }
   },
   {
-    "id": 10036,
-    "number": [
-      110
-    ],
+    "id": 10035,
     "tag": "DS",
     "name": "Dom Studencki 3",
     "coordinates": [
@@ -121,13 +119,14 @@
         "longitude": 18.6107600,
         "latitude": 54.3700039
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6109391,
+      "latitude": 54.3696836
+    }
   },
   {
-    "id": 10037,
-    "number": [
-      112
-    ],
+    "id": 10036,
     "tag": "DS",
     "name": "Dom Studencki 4",
     "coordinates": [
@@ -199,10 +198,14 @@
         "longitude": 18.6100962,
         "latitude": 54.3698195
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6101317,
+      "latitude": 54.3694586
+    }
   },
   {
-    "id": 10038,
+    "id": 10037,
     "tag": "DS",
     "name": "Dom Studencki 2",
     "coordinates": [
@@ -226,10 +229,14 @@
         "longitude": 18.6070774,
         "latitude": 54.3697652
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6072779,
+      "latitude": 54.3696117
+    }
   },
   {
-    "id": 10039,
+    "id": 10038,
     "tag": "DS",
     "name": "Dom Studencki 1",
     "coordinates": [
@@ -253,10 +260,14 @@
         "longitude": 18.6071008,
         "latitude": 54.3691867
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6073557,
+      "latitude": 54.3689273
+    }
   },
   {
-    "id": 10040,
+    "id": 10039,
     "tag": "DS",
     "name": "Dom Studencki 12",
     "coordinates": [
@@ -280,10 +291,14 @@
         "longitude": 18.6077446,
         "latitude": 54.3692148
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6080557,
+      "latitude": 54.3689742
+    }
   },
   {
-    "id": 10041,
+    "id": 10040,
     "tag": "DS",
     "name": "Dom Studencki 6",
     "coordinates": [
@@ -331,10 +346,14 @@
         "longitude": 18.6168440,
         "latitude": 54.3790464
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6171967,
+      "latitude": 54.3787984
+    }
   },
   {
-    "id": 10042,
+    "id": 10041,
     "tag": "DS",
     "name": "Dom Studencki 5",
     "coordinates": [
@@ -382,10 +401,14 @@
         "longitude": 18.6181113,
         "latitude": 54.3784344
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6185995,
+      "latitude": 54.3783016
+    }
   },
   {
-    "id": 10043,
+    "id": 10042,
     "tag": "DS",
     "name": "Dom Studencki 10",
     "coordinates": [
@@ -437,10 +460,14 @@
         "longitude": 18.6192217,
         "latitude": 54.3782555
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6193116,
+      "latitude": 54.3783930
+    }
   },
   {
-    "id": 10044,
+    "id": 10043,
     "tag": "DS",
     "name": "Dom Studencki 7",
     "coordinates": [
@@ -484,10 +511,14 @@
         "longitude": 18.6191601,
         "latitude": 54.3787031
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6189133,
+      "latitude": 54.3790561
+    }
   },
   {
-    "id": 10045,
+    "id": 10044,
     "tag": "DS",
     "name": "Dom Studencki 8",
     "coordinates": [
@@ -535,10 +566,14 @@
         "longitude": 18.6190896,
         "latitude": 54.3777626
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6192580,
+      "latitude": 54.3777697
+    }
   },
   {
-    "id": 10046,
+    "id": 10045,
     "tag": "DS",
     "name": "Dom Studencki 9",
     "coordinates": [
@@ -594,10 +629,14 @@
         "longitude": 18.6193458,
         "latitude": 54.3777091
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6198789,
+      "latitude": 54.3775642
+    }
   },
   {
-    "id": 10047,
+    "id": 10046,
     "tag": "DS",
     "name": "Dom Studencki 11",
     "coordinates": [
@@ -621,6 +660,10 @@
         "longitude": 18.6269673,
         "latitude": 54.4043247
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6271209,
+      "latitude": 54.4045320
+    }
   }
 ]

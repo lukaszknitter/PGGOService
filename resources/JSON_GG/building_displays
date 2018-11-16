@@ -1,6 +1,6 @@
 [
   {
-    "id": 10010,
+    "id": 10009,
     "tag": "GG",
     "name": "Gmach B",
     "coordinates": [
@@ -40,10 +40,14 @@
         "longitude": 18.6174488,
         "latitude": 54.3711098
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6175293,
+      "latitude": 54.3710524
+    }
   },
   {
-    "id": 10019,
+    "id": 10018,
     "tag": "GG",
     "name": "Gmach Główny",
     "coordinates": [
@@ -243,6 +247,10 @@
         "longitude": 18.6187369,
         "latitude": 54.3720535
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6192352,
+      "latitude": 54.3715523
+    }
   }
 ]

@@ -96,6 +96,10 @@
         "longitude": 18.6128770,
         "latitude": 54.3731222
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6131170,
+      "latitude": 54.3728523
+    }
   }
 ]

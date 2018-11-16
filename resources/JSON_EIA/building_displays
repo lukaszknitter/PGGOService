@@ -1,6 +1,6 @@
 [
   {
-    "id": 10017,
+    "id": 10016,
     "tag": "EIA",
     "name": "Budynek Wydziału Elektrotechniki i Automatyki",
     "coordinates": [
@@ -96,10 +96,14 @@
         "longitude": 18.6172919,
         "latitude": 54.3717512
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6179450,
+      "latitude": 54.3720070
+    }
   },
   {
-    "id": 10030,
+    "id": 10029,
     "tag": "EIA",
     "name": "Budynek Wysokich Napięć",
     "coordinates": [
@@ -139,10 +143,14 @@
         "longitude": 18.6175863,
         "latitude": 54.3743658
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6178860,
+      "latitude": 54.3743912
+    }
   },
   {
-    "id": 10032,
+    "id": 10031,
     "tag": "EIA",
     "name": "Laboratorium LINTE^2",
     "coordinates": [
@@ -166,10 +174,14 @@
         "longitude": 18.6128783,
         "latitude": 54.3693164
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6129642,
+      "latitude": 54.3690711
+    }
   },
   {
-    "id": 10033,
+    "id": 10032,
     "tag": "EIA",
     "name": "Pawilon Wydz. Elektrotechniki i Automatyki",
     "coordinates": [
@@ -217,10 +229,14 @@
         "longitude": 18.6124760,
         "latitude": 54.3682711
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6127710,
+      "latitude": 54.3681601
+    }
   },
   {
-    "id": 10034,
+    "id": 10033,
     "tag": "EIA",
     "name": "Budynki A, B, C Wydziału Elektrotechniki i Automatyki",
     "coordinates": [
@@ -276,6 +292,10 @@
         "longitude": 18.6130902,
         "latitude": 54.3682195
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6129159,
+      "latitude": 54.3685539
+    }
   }
 ]

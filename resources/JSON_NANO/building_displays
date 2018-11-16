@@ -1,6 +1,6 @@
 [
   {
-    "id": 10014,
+    "id": 10013,
     "tag": "NANO",
     "name": "Centrum Nanotechnologii B Centrum Nauczania Matematyki i Kształcenia na Odległość",
     "coordinates": [
@@ -24,10 +24,14 @@
         "longitude": 18.6156182,
         "latitude": 54.3722051
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6158529,
+      "latitude": 54.3724008
+    }
   },
   {
-    "id": 10024,
+    "id": 10023,
     "tag": "NANO",
     "name": "Centrum Nanotechnologii A",
     "coordinates": [
@@ -83,6 +87,10 @@
         "longitude": 18.6218020,
         "latitude": 54.3713133
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6220729,
+      "latitude": 54.3713867
+    }
   }
 ]

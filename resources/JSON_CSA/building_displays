@@ -1,6 +1,6 @@
 [
   {
-    "id": 10050,
+    "id": 10049,
     "tag": "CSA",
     "name": "Centrum Sportu Akademickiego",
     "coordinates": [
@@ -56,6 +56,10 @@
         "longitude": 18.6289501,
         "latitude": 54.3719148
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6313802,
+      "latitude": 54.3698492
+    }
   }
 ]

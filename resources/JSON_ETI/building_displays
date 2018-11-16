@@ -56,7 +56,11 @@
         "longitude": 18.6118410,
         "latitude": 54.3718961
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6126208,
+      "latitude": 54.3716398
+    }
   },
   {
     "id": 10001,
@@ -167,6 +171,10 @@
         "longitude": 18.6124894,
         "latitude": 54.3710738
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6130849,
+      "latitude": 54.3709430
+    }
   }
 ]

@@ -24,14 +24,14 @@
         "longitude": 18.6154351,
         "latitude": 54.3718426
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6153433,
+      "latitude": 54.3715273
+    }
   },
   {
     "id": 10005,
-    "buildingId": 11111,
-    "number": [
-      23
-    ],
     "tag": "OTHER",
     "name": "Bratniak",
     "coordinates": [
@@ -71,10 +71,14 @@
         "longitude": 18.6151072,
         "latitude": 54.3708942
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6151770,
+      "latitude": 54.3708399
+    }
   },
   {
-    "id": 10012,
+    "id": 10011,
     "tag": "OTHER",
     "name": "Misiówka",
     "coordinates": [
@@ -98,10 +102,14 @@
         "longitude": 18.6169177,
         "latitude": 54.3718180
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6169258,
+      "latitude": 54.3717398
+    }
   },
   {
-    "id": 10015,
+    "id": 10014,
     "tag": "OTHER",
     "name": "Audytorium Novum",
     "coordinates": [
@@ -153,10 +161,14 @@
         "longitude": 18.6162244,
         "latitude": 54.3729097
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6163652,
+      "latitude": 54.3728007
+    }
   },
   {
-    "id": 10020,
+    "id": 10019,
     "tag": "OTHER",
     "name": "Dział Promocji",
     "coordinates": [
@@ -188,10 +200,14 @@
         "longitude": 18.6195865,
         "latitude": 54.3722109
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6195704,
+      "latitude": 54.3721258
+    }
   },
   {
-    "id": 10021,
+    "id": 10020,
     "tag": "OTHER",
     "name": "Portiernia Główna",
     "coordinates": [
@@ -223,10 +239,14 @@
         "longitude": 18.6198648,
         "latitude": 54.3720765
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6198896,
+      "latitude": 54.3720289
+    }
   },
   {
-    "id": 10025,
+    "id": 10024,
     "tag": "OTHER",
     "name": "Magazyn Odpadów i Odczynników Chemicznych",
     "coordinates": [
@@ -250,10 +270,14 @@
         "longitude": 18.6210430,
         "latitude": 54.3704137
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6212441,
+      "latitude": 54.3704055
+    }
   },
   {
-    "id": 10027,
+    "id": 10026,
     "tag": "OTHER",
     "name": "Zespół Opieki Zdrowotnej",
     "coordinates": [
@@ -317,10 +341,14 @@
         "longitude": 18.6227489,
         "latitude": 54.3701164
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6233282,
+      "latitude": 54.3704274
+    }
   },
   {
-    "id": 10028,
+    "id": 10027,
     "tag": "OTHER",
     "name": "Budynek Centrum Wiedzy i Przedsiębiorczości",
     "coordinates": [
@@ -376,10 +404,14 @@
         "longitude": 18.6207312,
         "latitude": 54.3737315
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6208016,
+      "latitude": 54.3736491
+    }
   },
   {
-    "id": 10029,
+    "id": 10028,
     "tag": "OTHER",
     "name": "Budynek 25",
     "coordinates": [
@@ -443,10 +475,14 @@
         "longitude": 18.6196804,
         "latitude": 54.3743135
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6198440,
+      "latitude": 54.3742178
+    }
   },
   {
-    "id": 10031,
+    "id": 10030,
     "tag": "OTHER",
     "name": "Centrum Obsługi Technicznej",
     "coordinates": [
@@ -470,10 +506,14 @@
         "longitude": 18.6119758,
         "latitude": 54.3699336
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6122614,
+      "latitude": 54.3698336
+    }
   },
   {
-    "id": 10048,
+    "id": 10047,
     "tag": "OTHER",
     "name": "Budynki Działu Gospodarczego",
     "coordinates": [
@@ -561,10 +601,14 @@
         "longitude": 18.6111248,
         "latitude": 54.3691387
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6111966,
+      "latitude": 54.3687101
+    }
   },
   {
-    "id": 10049,
+    "id": 10048,
     "tag": "OTHER",
     "name": "Budynek Działu Gospodarczego Wirtualna Polska",
     "coordinates": [
@@ -620,6 +664,41 @@
         "longitude": 18.6078706,
         "latitude": 54.3698211
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6081576,
+      "latitude": 54.3696367
+    }
+  },
+  {
+    "id": 10050,
+    "tag": "OTHER",
+    "name": "Pawilony Jugosłowiańskie",
+    "coordinates": [
+      {
+        "longitude": 18.6140478,
+        "latitude": 54.3723531
+      },
+      {
+        "longitude": 18.6137299,
+        "latitude": 54.3718336
+      },
+      {
+        "longitude": 18.6141470,
+        "latitude": 54.3717484
+      },
+      {
+        "longitude": 18.6144608,
+        "latitude": 54.3722703
+      },
+      {
+        "longitude": 18.6140478,
+        "latitude": 54.3723531
+      }
+    ],
+    "center": {
+      "longitude": 18.6141014,
+      "latitude": 54.3720601
+    }
   }
 ]

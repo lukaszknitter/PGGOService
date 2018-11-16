@@ -1,6 +1,6 @@
 [
   {
-    "id": 10011,
+    "id": 10010,
     "tag": "CHEM",
     "name": "Inżynieria Chemiczna",
     "coordinates": [
@@ -24,10 +24,14 @@
         "longitude": 18.6172530,
         "latitude": 54.3715785
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6173174,
+      "latitude": 54.3714477
+    }
   },
   {
-    "id": 10022,
+    "id": 10021,
     "tag": "CHEM",
     "name": "Budynek A Wydziału Chemicznego",
     "coordinates": [
@@ -163,10 +167,14 @@
         "longitude": 18.6204884,
         "latitude": 54.3713887
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6208525,
+      "latitude": 54.3712102
+    }
   },
   {
-    "id": 10023,
+    "id": 10022,
     "tag": "CHEM",
     "name": "Budynek B Wydziału Chemicznego",
     "coordinates": [
@@ -206,10 +214,14 @@
         "longitude": 18.6200613,
         "latitude": 54.3707012
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6204690,
+      "latitude": 54.3706586
+    }
   },
   {
-    "id": 10026,
+    "id": 10025,
     "tag": "CHEM",
     "name": "Budynek C Wydziału Chemicznego",
     "coordinates": [
@@ -265,6 +277,10 @@
         "longitude": 18.6211905,
         "latitude": 54.3706934
       }
-    ]
+    ],
+    "center": {
+      "longitude": 18.6217752,
+      "latitude": 54.3711274
+    }
   }
 ]
