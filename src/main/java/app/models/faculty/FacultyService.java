@@ -19,6 +19,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
+import java.util.stream.Collectors;
 
 
 @Service
@@ -47,11 +48,11 @@ public class FacultyService {
 		Faculty faculty = repository.findById(id)
 				.orElseThrow(facultyNotFoundException(id));
 
-//		ArrayList<Department> departments = (ArrayList<Department>) faculty.getDepartments()
-//				.stream().filter(distinctByKey(Department::getId))
-//				.collect(Collectors.toList());
-//
-//		faculty.setDepartments(departments);
+		ArrayList<Department> departments = (ArrayList<Department>) faculty.getDepartments()
+				.stream().filter(distinctByKey(Department::getId))
+				.collect(Collectors.toList());
+
+		faculty.setDepartments(departments);
 		return mapper.map(faculty, FacultyDto.class);
 
 	}
@@ -89,14 +90,14 @@ public class FacultyService {
 	public void addDepartment(long id, DepartmentDto departmentDto) {
 		Faculty faculty = repository.findById(id).orElseThrow((facultyNotFoundException(id)));
 		Department department = mapper.map(departmentDto, Department.class);
-//
-//		ArrayList<Department> departments = (ArrayList<Department>) faculty.getDepartments()
-//				.stream()
-//				.filter(distinctByKey(Department::getId))
-//				.collect(Collectors.toList());
-//
+
+		ArrayList<Department> departments = (ArrayList<Department>) faculty.getDepartments()
+				.stream()
+				.filter(distinctByKey(Department::getId))
+				.collect(Collectors.toList());
+
 		faculty.getDepartments().add(department);
-//		faculty.setDepartments(departments);
+		faculty.setDepartments(departments);
 		repository.saveAndFlush(faculty);
 	}
 }
