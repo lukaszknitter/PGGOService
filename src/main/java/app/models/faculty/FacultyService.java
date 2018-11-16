@@ -14,6 +14,10 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.function.Supplier;
 
 
@@ -24,6 +28,11 @@ public class FacultyService {
 	private final ModelMapper mapper;
 	private final FacultyRepository repository;
 	private final SearchSpecifications searchSpecifications;
+
+	public static <T> Predicate<T> distinctByKey(Function<? super T, ?> keyExtractor) {
+		Set<Object> seen = ConcurrentHashMap.newKeySet();
+		return t -> seen.add(keyExtractor.apply(t));
+	}
 
 	public FacultyDto createFaculty(FacultyCreationDto dto) {
 		Optional<Faculty> facultyWithSameName = repository.findFirstByName(dto.getName());
@@ -37,7 +46,14 @@ public class FacultyService {
 	public FacultyDto getFacultyDto(long id) {
 		Faculty faculty = repository.findById(id)
 				.orElseThrow(facultyNotFoundException(id));
+
+//		ArrayList<Department> departments = (ArrayList<Department>) faculty.getDepartments()
+//				.stream().filter(distinctByKey(Department::getId))
+//				.collect(Collectors.toList());
+//
+//		faculty.setDepartments(departments);
 		return mapper.map(faculty, FacultyDto.class);
+
 	}
 
 	public ArrayList<FacultySearchDto> getFaculties(String name) {
@@ -73,7 +89,14 @@ public class FacultyService {
 	public void addDepartment(long id, DepartmentDto departmentDto) {
 		Faculty faculty = repository.findById(id).orElseThrow((facultyNotFoundException(id)));
 		Department department = mapper.map(departmentDto, Department.class);
+//
+//		ArrayList<Department> departments = (ArrayList<Department>) faculty.getDepartments()
+//				.stream()
+//				.filter(distinctByKey(Department::getId))
+//				.collect(Collectors.toList());
+//
 		faculty.getDepartments().add(department);
+//		faculty.setDepartments(departments);
 		repository.saveAndFlush(faculty);
 	}
 }

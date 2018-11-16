@@ -67,7 +67,6 @@ public class BuildingService {
 	}
 
 	public ArrayList<BuildingSearchDto> getBuildings(String name) {
-
 		List result = buildingRepository.findAll(searchSpecifications.nameContains(name));
 		Type listType = new TypeToken<List<BuildingSearchDto>>() {
 		}.getType();

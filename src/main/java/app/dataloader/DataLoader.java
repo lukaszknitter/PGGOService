@@ -163,7 +163,7 @@ public class DataLoader {
 
 							});
 				});
-		pois.forEach(poiDto -> poiService.createPOI(poiDto));
+		pois.forEach(poiService::createPOI);
 		buildingDisplays.forEach((buildingDisplayService::createBuildingDisplay));
 	}
 
