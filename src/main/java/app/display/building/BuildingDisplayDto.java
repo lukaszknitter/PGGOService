@@ -18,4 +18,5 @@ public class BuildingDisplayDto {
 	private String name;
 	private String tag;
 	private List<Coordinate> coordinates;
+	private Coordinate center;
 }
