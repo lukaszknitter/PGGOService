@@ -23,6 +23,6 @@ public class BuildingDisplay extends BaseEntity {
 	@JoinColumn(name = "building_display_id")
 	public List<Coordinate> coordinates;
 
-	@OneToOne
+	@OneToOne(cascade = CascadeType.ALL)
 	public Coordinate center;
 }
