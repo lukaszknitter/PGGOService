@@ -96,7 +96,7 @@ public class FacultyService {
 				.filter(distinctByKey(Department::getId))
 				.collect(Collectors.toList());
 
-		faculty.getDepartments().add(department);
+		departments.add(department);
 		faculty.setDepartments(departments);
 		repository.saveAndFlush(faculty);
 	}
