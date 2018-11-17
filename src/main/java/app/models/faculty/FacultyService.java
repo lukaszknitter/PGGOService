@@ -93,11 +93,14 @@ public class FacultyService {
 
 		ArrayList<Department> departments = (ArrayList<Department>) faculty.getDepartments()
 				.stream()
-				.filter(distinctByKey(Department::getId))
+				.filter(distinctByKey(Department::getName))
 				.collect(Collectors.toList());
 
-		departments.add(department);
-		faculty.setDepartments(departments);
+		if (departments.stream().noneMatch(department1 -> department1.getName().equals(department.getName()))) {
+			departments.add(department);
+			faculty.setDepartments(departments);
+		}
+
 		repository.saveAndFlush(faculty);
 	}
 }
