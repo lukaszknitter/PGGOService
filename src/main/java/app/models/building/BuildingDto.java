@@ -20,6 +20,7 @@ public class BuildingDto {
 	private List<String> facultiesNames;
 	private List<Long> facultiesIds;
 	public List<Integer> numbers;
+	private long buildingDisplayId;
 
 	public BuildingDto(BuildingDto buildingDto) {
 		this.id = buildingDto.getId();
@@ -29,5 +30,6 @@ public class BuildingDto {
 		this.facultiesNames = buildingDto.getFacultiesNames();
 		this.facultiesIds = buildingDto.getFacultiesIds();
 		this.numbers = buildingDto.getNumbers();
+		this.buildingDisplayId = buildingDto.getBuildingDisplayId();
 	}
 }

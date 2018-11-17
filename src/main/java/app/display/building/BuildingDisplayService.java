@@ -2,6 +2,8 @@ package app.display.building;
 
 import app.exception.ConflictException;
 import app.exception.ResourceNotFoundException;
+import app.models.building.Building;
+import app.models.building.BuildingRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
@@ -20,6 +22,7 @@ public class BuildingDisplayService {
 
 	private final ModelMapper mapper;
 	private final BuildingDisplayRepository buildingDisplayRepository;
+	private final BuildingRepository buildingRepository;
 
 	public BuildingDisplayDto createBuildingDisplay(BuildingDisplayDto dto) {
 		Optional<BuildingDisplay> buildingWithSameName = buildingDisplayRepository.findFirstByName(dto.getName());
@@ -30,7 +33,12 @@ public class BuildingDisplayService {
 		BuildingDisplay buildingDisplay = mapper.map(dto, BuildingDisplay.class);
 		System.out.println(buildingDisplay.getName());
 
-		buildingDisplayRepository.saveAndFlush(buildingDisplay);
+		buildingDisplay = buildingDisplayRepository.saveAndFlush(buildingDisplay);
+
+		Building updatedBuilding = buildingDisplay.getBuilding();
+		updatedBuilding.setBuildingDisplay(buildingDisplay);
+		buildingRepository.saveAndFlush(updatedBuilding);
+
 		return mapper.map(buildingDisplay, BuildingDisplayDto.class);
 	}
 
