@@ -6,19 +6,41 @@
   "name": "Parking dla rowerów",
     "coordinate":
           {
-            "longitude": 18.614073,
-            "latitude": 54.372446
+            "longitude": 18.612964,
+            "latitude": 54.371820
           }
 },
 {
   "id": 10091,
   "tag": OTHER,
   "type": BUS_STOP,
-  "name":"Testowe POI",
+  "name":"Przystanek autobusowy Traugutta",
   "coordinate":
         {
-          "longitude": 18.614274,
-          "latitude": 54.372416
+          "longitude": 18.612611,
+          "latitude": 54.370074
+        }
+},
+{
+  "id": 10092,
+  "tag": OTHER,
+  "type": ATM,
+  "name":"Bankomat PKO",
+  "coordinate":
+        {
+          "longitude": 18.613016,
+          "latitude": 54.373139
+        }
+},
+{
+  "id": 10093,
+  "tag": OTHER,
+  "type": RESTAURANT,
+  "name":"Pasibrzuch - jadłodajnia",
+  "coordinate":
+        {
+          "longitude": 18.612006,
+          "latitude": 54.371596
         }
 }
 ]
